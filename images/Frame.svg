@@ -1,0 +1,22 @@
+<svg width="1458" height="6700" viewBox="0 0 1458 6700" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1458" height="6700" fill="#E0E7E9"/>
+<ellipse cx="1055" cy="3372.5" rx="11" ry="12.5" fill="#C4C4C4"/>
+<ellipse cx="1097" cy="3372.5" rx="11" ry="12.5" fill="#C4C4C4"/>
+<ellipse cx="1149" cy="3372.5" rx="11" ry="12.5" fill="#C4C4C4"/>
+<ellipse cx="1201" cy="3372.5" rx="11" ry="12.5" fill="#C4C4C4"/>
+<ellipse cx="1201" cy="3412.5" rx="11" ry="12.5" fill="#C4C4C4"/>
+<ellipse cx="1149" cy="3412.5" rx="11" ry="12.5" fill="#C4C4C4"/>
+<ellipse cx="1097" cy="3412.5" rx="11" ry="12.5" fill="#C4C4C4"/>
+<ellipse cx="1055" cy="3412.5" rx="11" ry="12.5" fill="#C4C4C4"/>
+<ellipse cx="1055" cy="3452.5" rx="11" ry="12.5" fill="#C4C4C4"/>
+<ellipse cx="1108" cy="3452.5" rx="11" ry="12.5" fill="#C4C4C4"/>
+<ellipse cx="1160" cy="3452.5" rx="11" ry="12.5" fill="#C4C4C4"/>
+<ellipse cx="1201" cy="3452.5" rx="11" ry="12.5" fill="#C4C4C4"/>
+<path d="M850.898 5885.89C752.336 5427.5 337.411 5692.93 0 5993.59V6700H760.709H1458V5769.58C1458 5769.58 915.433 6186.02 850.898 5885.89Z" fill="url(#paint0_linear)"/>
+<defs>
+<linearGradient id="paint0_linear" x1="715.62" y1="5842.83" x2="715.62" y2="6717.93" gradientUnits="userSpaceOnUse">
+<stop stop-color="#30CFD0"/>
+<stop offset="1" stop-color="#330867" stop-opacity="0.94"/>
+</linearGradient>
+</defs>
+</svg>
