@@ -75,7 +75,7 @@
             <source src="./images/BG_FULL_MOVIE.mov" type="video/mp4" />
           </video>
         <div class="overlay">
-          <p >Masha Zyryanova</p>
+          <p id="overlay__text">Masha Zyryanova</p>
         </div> 
       </section>
       <!-- End Intro -->
@@ -217,7 +217,7 @@
             </div> 
             <div class="project__description-mobile">
                 <div class="remote__mobile">
-                    <p>
+                    <p class="text__mobile">
                     Built with Beautiful Soup, Bootstrap, eBay API, Flask, OpenPose,TensorFlow
                     </p>
                   </div> 
@@ -276,7 +276,7 @@
         <h1> LANDING PAGES</h1>
         <p id="web__info">Responsive web pages for fashion and e-commerce websites. Built using HTML5, css3, svg graphics, wordpress.</p>
           <div class="project content" >  
-              <div class="project__container" >
+              <div id="landing_page_container" class="project__container" >
                     <!-- <p class ="project__heading">Vivid Fashion</p>			 -->
                     <div class="project__image">
                         <a href="/">
@@ -301,7 +301,11 @@
          One of my favorite things is to participate and compete in hackathons. I love working 
         in a team environment while building something awesome on a tight deadline.
       </p>
-      <button class="about__button">Download resume</button>
+      <a  
+        href="/images/Masha_Zyryanova_Web_Developer.pdf" 
+        download="Masha_Zyryanova_resume">
+        <button class="about__button" >Download resume</button>
+      </a>
     </section> 
     <!-- end about -->
     <section class="bg_white" id="skills">
