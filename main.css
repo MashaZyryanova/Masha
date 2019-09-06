@@ -560,11 +560,12 @@ PROJECTS Styles
   max-width: 1180px;
 }
 
-.about p {
+.about__text {
   font-family: 'proxima_novalight';
   font-size: 20px;
   letter-spacing: 3px;
   color: white;
+  line-height: 1.4em;
 }
 
 .ellipse {
@@ -583,7 +584,8 @@ PROJECTS Styles
   border-radius: 10px;
   font-size: 16px;
   text-transform: uppercase;
-  margin-left: 600px;
+  margin-top: 40px;
+  margin-left: 70%;
 }
 
 .about__button .button__link {
@@ -601,7 +603,7 @@ PROJECTS Styles
   color: #f34900;
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1201px) {
   .about {
     margin: auto;
   }
@@ -609,7 +611,18 @@ PROJECTS Styles
     display: none;
   }
   .about__button {
-    margin: 40px auto 0;
+    margin: 40px auto;
+  }
+}
+
+@media screen and (max-width: 577px) {
+  .about {
+    width: 97%;
+    padding: 40px;
+  }
+  .about p {
+    line-height: 2em;
+    font-size: 20px;
   }
 }
 

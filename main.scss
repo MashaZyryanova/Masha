@@ -457,16 +457,15 @@ PROJECTS Styles
 .about{
     overflow: hidden;
     margin-left:300px;
-    max-width: 1180px;
-    // margin:0 auto;
-    p{
-        font-family: 'proxima_novalight';
-        font-size: 20px;
-        letter-spacing: 3px;
-        color:white;
-    }
+    max-width: 1180px; 
 }
-
+.about__text{
+    font-family: 'proxima_novalight';
+    font-size: 20px;
+    letter-spacing: 3px;
+    color:white;
+    line-height: 1.4em;
+}
 
 .ellipse{
   shape-outside: ellipse(100px 200px at 50% 50%);
@@ -483,7 +482,8 @@ PROJECTS Styles
     border-radius: 10px;
     font-size:16px;
     text-transform:uppercase;
-    margin-left: 600px;
+     margin-top: 40px;
+    margin-left:70%;
     .button__link{
         color:$sky;
         text-decoration: none;
@@ -497,15 +497,26 @@ PROJECTS Styles
         color:$complimentary;
     }
 }
-@media screen and (max-width:980px){
+@media screen and (max-width: 1201px){
     .about{
         margin:auto;  
-    }
+    } 
     .ellipse{
         display:none;
     }
     .about__button{
-        margin:40px auto 0;
+        margin:40px auto ;
+    }
+}
+
+@media screen and(max-width:577px){
+    .about{
+        width:97%;
+        padding:40px;
+        p{
+            line-height: 2em;
+            font-size:20px;
+        }
     }
 }
 //skills styles
