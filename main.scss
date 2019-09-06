@@ -246,6 +246,20 @@ VIDEO INTRO Styles
         }
     }
 }
+@media screen and(max-width:767px){
+    .overlay{
+        p{
+            margin-top:20%;
+            text-align:center;
+            font-size:60px;
+        } 
+    }
+}
+@media screen and(max-width:575px){
+    #overlay__text{
+        font-size:49px;
+    }
+}
 // end styles for intro
 .vortex_rings{
     overflow: hidden;
@@ -340,8 +354,6 @@ PROJECTS Styles
 .black{
     color:black;
 }
-
-
 .project{
     display: flex;
     justify-content: space-between;
@@ -391,7 +403,6 @@ PROJECTS Styles
         color:white;
         text-decoration: none;
     }
-
 }
 .button__skills:hover{
     background-color:white;
@@ -437,15 +448,38 @@ PROJECTS Styles
     }
     .project__description-mobile{
         display: block;
-        font-size:24px;
+        font-size:20px;
         max-width:600px;
+        text-align:center;
+        line-height: 1.6em;
+    } 
+    #games__info{
+        line-height: 1.6em;
+        font-size:20px;
+        max-width:98%;
+    }
+    .mobile__text{
+        line-height: 1.6em;
+        font-size:20px;
+        max-width:98%;
+    }
+}
+@media screen and (max-width:577px){
+    .project__container{
+        width:98%;
+    }
+    .project__description-mobile{
+        display: block;
+        font-size:20px;
+        max-width:98%;
+        line-height: 1.7em;
         text-align:center;
     } 
 }
 .mobile_landing_page{
     background-color: white;
     width: 20%;
-    padding: 20px 20px ;
+    padding: 25px 20px ;
     border-radius: 40px;
     box-shadow: 5px 10px 18px #888888;
 }
@@ -453,6 +487,25 @@ PROJECTS Styles
     box-shadow: 5px 10px $monochromatic;
     border:2px solid $monochromatic;  
 }
+@media screen and (max-width:980px){
+ .mobile_landing_page{
+     width:35%;
+     padding:55px 20px;
+ }
+ #landing_page_container{
+     margin-bottom:70px;
+ }
+}
+@media screen and (max-width:767px){
+    .mobile_landing_page{
+        width:60%;
+        padding:55px 20px;
+    }
+    #landing_page_container{
+        width:95%;
+        margin-bottom:70px;
+    }
+   }
 // about section
 .about{
     overflow: hidden;
@@ -466,7 +519,6 @@ PROJECTS Styles
     color:white;
     line-height: 1.4em;
 }
-
 .ellipse{
   shape-outside: ellipse(100px 200px at 50% 50%);
   width: 350px;
@@ -493,6 +545,7 @@ PROJECTS Styles
 .about__button:hover{
     color:$complimentary;
     border: 2px solid $complimentary;
+    text-decoration: none;
     .button__link{
         color:$complimentary;
     }
@@ -508,7 +561,6 @@ PROJECTS Styles
         margin:40px auto ;
     }
 }
-
 @media screen and(max-width:577px){
     .about{
         width:97%;
@@ -558,6 +610,19 @@ PROJECTS Styles
     margin-bottom: 35px;
     color:black;
 }
+@media screen and (max-width:1201px){
+    .skills__container{
+        padding:20px 10px;
+    }
+}
+@media screen and (max-width:1100px){
+    .skills__container{
+        padding:20px 2px;
+    }
+    .skills__heading{
+        max-width:80%;
+    }
+}
 .site__footer{
     height: 500px;
     text-align: center; 
@@ -577,10 +642,10 @@ PROJECTS Styles
     margin-bottom: 60px;
 }
 .footer__heading:hover{
-    color:$body_text;
+    color:$complimentary;
 }
 .phone:hover{
-    color:$body_text;
+    color:$complimentary;
 }
 i.fab{
     color:white;
