@@ -213,10 +213,8 @@ VIDEO INTRO Styles
     margin-top:75px;
     width:100%;  
 }
-
 #vring{
-    width: 100%;
-      
+    width: 100%;   
 }
 .video_background{
     display: flex;
@@ -276,13 +274,18 @@ VIDEO INTRO Styles
     margin-bottom: 40px;
 }
 .graphs_container{
-    overflow: hidden;
-    max-width:1100px;
+    // overflow: hidden;
+    margin:0 auto;
+    max-width:1000px;
     display:flex;
     justify-content: space-between;  
 }
-
-
+@media screen and(max-width:1100px){
+    .graphs_container{
+     flex-direction: column;
+     align-items:center;
+    }
+}
 /*
 ==============================================
 PROJECTS Styles
@@ -410,7 +413,7 @@ PROJECTS Styles
 }
 
 @media screen and(max-width:980px){
-    .project,.graphs_container,.skills{
+    .project,.skills{
      flex-direction: column;
      align-items:center;
     }
@@ -429,9 +432,7 @@ PROJECTS Styles
         font-size:24px;
         max-width:600px;
         text-align:center;
-    }
-    
-    
+    } 
 }
 .mobile_landing_page{
     background-color: white;
@@ -445,7 +446,6 @@ PROJECTS Styles
     border:2px solid $monochromatic;  
 }
 // about section
-
 .about{
     overflow: hidden;
     margin-left:300px;
@@ -594,7 +594,6 @@ i.fab:hover{
     z-index:997;
     display:none;
 }
-
 .sidenav a{
     display:block;
     color:white;
