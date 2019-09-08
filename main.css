@@ -55,6 +55,9 @@ a {
   cursor: pointer;
   color: white;
 }
+a:hover{
+  text-decoration: none;
+}
 
 .text_white {
   color: white;
