@@ -55,9 +55,6 @@ a {
   cursor: pointer;
   color: white;
 }
-a:hover{
-  text-decoration: none;
-}
 
 .text_white {
   color: white;
@@ -188,29 +185,37 @@ Header Styles
           justify-content: space-between;
 }
 
-.menu__item {
+.menu-item {
   height: 62%;
   -ms-flex-item-align: end;
       align-self: flex-end;
   margin-bottom: 1px;
 }
 
-.menu__link {
+.menu-item a {
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 18px;
   color: white;
 }
 
-.menu__item:hover {
+.menu-item:hover {
   border-bottom: 5px solid white;
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
 }
 
-.menu__item:hover .link {
+.menu-item:hover a {
   text-decoration: none;
   color: white;
+}
+
+.sub-menu {
+  display: none;
+}
+
+.sub-menu:hover {
+  display: block;
 }
 
 .header_mobile {
