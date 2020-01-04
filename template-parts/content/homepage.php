@@ -1,96 +1,16 @@
-<!DOCTYPTE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <?php wp_head()?>
-        <link rel="stylesheet" href="./main.css">
-        <script src="https://kit.fontawesome.com/1ec81f68fa.js"></script>
-        <title>Masha Zyryanova</title>    
-    </head>
-    <body class = "site">
-      <header class="site__header header sticky" >
-        <div class="header_desktop header__content content" >
-            <div class="logo header__logo">
-              <h1 class = "logo__text">MYZ</h1>
-            </div>
-            <nav class="header__nav nav">
-                <!-- <ul class="nav__menu menu">
-                    <li class="menu__item">
-                        <a href="https://github.com/NRostova" target = "blank" class="menu__link link">
-                            github
-                        </a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#projects" class="menu__link link ">
-                            projects
-                        </a> 
-                        <hr class = "hover-border">
-                    </li>
-                    <li class="menu__item">
-                        <a href="#skills" class="menu__link link">
-                            skills
-                        </a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#contact" class="menu__link link">
-                            contact
-                        </a> 
-                    </li>
-                    <li class="menu__item">
-                        <a href="#about" class="menu__link link">
-                            about
-                        </a> 
-                    </li>   
-                </ul> -->
-                <?php
+<?php get_header(); ?>
 
-                if(has_nav_menu('primary')){
-                  wp_nav_menu([
-                    'theme_location'  => 'primary',
-                    'container'       => 'false',
-                    'menu_class'      => 'nav__menu menu',
-                    'fallback_cb'     => false,
-                    'depth'           => 2
-                  ]);
-                }
-                ?>
-            </nav>     
-        </div> 
-        <div class="header_mobile mobile" >  
-          <div class="logo header__logo">
-              <h1 class = "logo__text">MYZ</h1>
-          </div>
-          <div class="mobile__menu">
-              <a class="menu-toggle" onclick="openNav()">
-                <i  class="fas fa-bars fa-2x"></i>
-              </a>
-          </div>
-          <!-- side nav -->
-        </div>
-        <!-- End Mobile Header  -->
-      </header> 
-      <div id="sidenav" class="sidenav">
-          <a href="javascript:void(0)"
-              class="closebtn"
-              onclick="closeNav()">&times;</a>
-          </a>
-          <a href="https://github.com/NRostova" target = "blank" class="menu__link link">
-            GITHUB
-          </a>
-          <a href="#projects">PROJECTS</a>
-          <a href="#skills">SKILLS</a>
-          <a href="#contact">CONTACT</a>
-          <a href="#about">ABOUT</a>
-      </div>
-      <div id="overlay__sidenav"></div>
-      <section class="intro"> 
-          <video  id="vring" autoplay loop muted >
-            <source src="./images/BG_FULL_MOVIE.mov" type="video/mp4" />
-          </video>
-        <div class="overlay">
-          <p id="overlay__text">Masha Zyryanova</p>
-        </div> 
-      </section>
+
+<!-- Content
+=========================================================== -->
+<section class="intro"> 
+    <video  id="vring" autoplay loop muted >
+      <source src="./images/BG_FULL_MOVIE.mov" type="video/mp4" />
+    </video>
+  <div class="overlay">
+    <p id="overlay__text">Masha Zyryanova</p>
+  </div> 
+</section>
       <!-- End Intro -->
       <section class="vortex_rings" id="projects">
         <h1>DYNAMICS OF VORTEX RINGS</h1>
@@ -359,33 +279,4 @@
       </div>
     </section>
     <!-- End Skills Section -->
-    <footer id="contact" class = "site__footer">
-        <a href="mailto:mzyrianova14@gmail.com">
-          <h1 class = "footer__heading">mzyrianova14@gmail.com</h1>
-        </a>
-        <h1 class = "phone">917.576.7664</h1>
-        <div class="social">
-          <a href="https://www.linkedin.com/in/maria-zyrianova-40465943/" target = "blank">
-            <i class="fab fa-linkedin fa-2x"></i>
-          </a>
-          <a href="https://github.com/NRostova" target = "blank" class="menu__link link">
-            <i class="fab fa-github fa-2x" ></i>
-          </a>
-         <i class="fab fa-instagram fa-2x"></i>
-        </div>
-    </footer>
-      </div>
-    </body>
-    <script>
-      //open close side nav
-        function openNav(){
-            document.getElementById("sidenav").style.width="450px";
-            //add class nav-open to body
-            document.body.classList.add('navopen');
-        }
-        function closeNav(){
-            document.getElementById("sidenav").style.width = "0";
-            document.body.classList.remove('navopen');
-        }
-    </script>
-</html>
+ <?php get_footer(); ?>
