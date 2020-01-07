@@ -4,38 +4,74 @@
 <!-- Content
 =========================================================== -->
 <section class="intro"> 
-    <video  id="vring" autoplay loop muted >
-      <source src="./images/BG_FULL_MOVIE.mov" type="video/mp4" />
+    <video  id="intro__video" autoplay loop muted >
+
+      <!-- <source src="http://localhost/themeMasha/wp-content/uploads/2020/01/MOVIE_BG.mp4" type="video/mp4" /> -->
+      <source src="http://localhost/themeMasha/wp-content/uploads/2020/01/BG_FULL_MOVIE.mov">
     </video>
-  <div class="overlay">
-    <p id="overlay__text">Masha Zyryanova</p>
-  </div> 
+    <div class="intro__col">
+      <p >Hello. I am a <span class="yellow">full stack developer</span> living
+        in Los Angeles. My biggest inspiration is nature. Whether I am looking for a prefect color scheme to design a website,
+        or imagining an engineering device, I often discover solutions by looking at the world around me.
+        I strive to write a clean, modular and reusable code.</p>
+    </div>
+    <h2 id="intro__text">Masha Zyryanova</h2>
+    <button class="arrow-wrapper scroll-to-projects">
+      <div class="line"></div>
+      <p><i class="arrow"></i></p>
+    </button>
+    <div class="overlay">
+    </div> 
 </section>
-      <!-- End Intro -->
-      <section class="vortex_rings" id="projects">
-        <h1>DYNAMICS OF VORTEX RINGS</h1>
-        <p class="vortex_rings__text">During an Aersopace Mentorship Program at Caltech I have studied dynamics of vortex rings. 
-          One of my goals was to determine the velocity of vortex rings
-          after they separate from the boundary layer and travel through the air.
-          I built 3d plots to visualize color profiles in RGB and HSV color spaces for an individual vortex ring
-          then detected vortex ring contours using Python and CV2, 
-          collecting coordinates along the way and building the velocity graph.
-        </p>
-        <div class="graphs_container">
-          <img src="./images/Frame105_HSV_3dplot.png" alt="3d plot HSV Color space">
-          <img src="./images/Frame105_RGB_3dplot.png" alt="sd plot RGB color space">
+<!-- End Intro -->
+<div id="first_project" style="height:60px;background-color:white;"></div>
+
+
+
+   <section class="web bg_white">
+        <h1 class="heading"> WEBSITES & LANDING PAGES</h1>
+        
+        <div class="project content" >  
+            <div id="landing_page_container" class="project__container shadow" >
+                  <!-- <p class ="project__heading">Vivid Fashion</p>			 -->
+                  <div class="project__image">
+                      <a href="/">
+                        <img class="responsive" width="600px;" height="auto" src="http://localhost/themeMasha/wp-content/uploads/2020/01/GTF.png"  alt="Vivid Fashion"  />
+                    </a>
+                  </div>
+            </div>
+            <div class="mobile_landing_page">
+                <img class="responsive__mobile responsive" width="180px; height="auto" src="./images/fp.png" alt="flowers">
+            </div> 
         </div>
-      </section>
-      <!-- End Vortex Rings -->
-      <section class="section winner_projects">
+        <div class="project content" >  
+            <div id="landing_page_container" class="project__container" >
+                  <!-- <p class ="project__heading">Vivid Fashion</p>			 -->
+                  <div class="project__image">
+                      <a href="/">
+                        <img class="responsive" width="600px;" height="auto" src="http://localhost/themeMasha/wp-content/uploads/2020/01/vividFashion.png"  alt="Vivid Fashion"  />
+                    </a>
+                  </div>
+            </div>
+            <div class="mobile_landing_page">
+                <img class="responsive__mobile responsive" width="180px; height="auto" src="./images/fp.png" alt="flowers">
+            </div> 
+        </div>
+          
+        <!-- End Project 6 Web Landing Pages-->
+    </section>
+   <!-- End Web section --> 
+
+     
+      <section class="section winner_projects white">
           <div class="content">
-              <h1 class="heading__1 ">WINNER PROJECTS</h1>
+              <h1 class="heading">WINNER PROJECTS</h1>
               <div class="project" > 
                   <div class="project__container" >
                       <p class ="project__heading">AImEe. Winner at FireDrone.AI 2019</p>
                         <div class="project__image">
                           <a href="https://devpost.com/software/aimmi" target="blank">
-                            <img class="responsive" width="600" height="350px" src="./images/AImEe.gif"  alt="AImEe gif"  />
+                            <img class="responsive" width="600" height="350px" src="http://localhost/themeMasha/wp-content/uploads/2020/01/AImEe.gif"  alt="AImEe gif"  />
                         </a>
                       </div>
                   </div>
@@ -75,7 +111,7 @@
                   <p class ="project__heading">Summerize Winner at MLH Local Hack Day 2018</p>		
                   <div class="image__container">
                     <a href="https://devpost.com/software/Summerize" target="blank">
-                      <img class="responsive" width="600" height="auto" src="./images/Summerize.gif"  alt="gif"  />
+                      <img class="responsive" width="600" height="auto" src="http://localhost/themeMasha/wp-content/uploads/2020/01/Summerize.gif"  alt="gif"  />
                     </a>
                   </div> 
                 </div>
@@ -114,18 +150,14 @@
       <!-- End Winner Projects -->
       <section class="games bg_white">
         <div class="content">
-          <h1>GAMES</h1>
-          <p id="games__info">
-              Superheroes save lives and have superpowers. In our game, groups of friends enjoy competing
-               for the best superhero pose and then get inspired to become a superhero in real life. They gain their superpowers by performing small acts of kindness that go a long way.
-               Currently, we support gifting a superhero costume or an educational book to kids that need help.
-          </p>
+          <h1 heading>GAMES</h1>
+        
           <div class="project bg_blue" >  
             <div class="project__container" >
                   <p class ="project__heading">SuperPose Caltech Hacktech 2019</p>			
                   <div class="project__image">
                       <a href="https://devpost.com/software/superpose" target="blank">
-                        <img class="responsive" width="600" height="auto" src="./images/superpose.gif"  alt="gif"  />
+                        <img class="responsive" width="600" height="auto" src="http://localhost/themeMasha/wp-content/uploads/2020/01/superpose.gif"  alt="gif"  />
                     </a>
                   </div>
             </div>
@@ -159,15 +191,55 @@
                       more about SuperPose
                     </a>
                   </button> 
+            </div>  
+          </div>
+          <!-- End Project 4 SuperPose-->
+          <div class="project bg_blue" >  
+            <div class="project__container" >
+                  <p class ="project__heading">Russian Doll</p>			
+                  <div class="project__image">
+                      <a href="https://devpost.com/software/superpose" target="blank">
+                        <img class="responsive" width="600" height="auto" src="http://localhost/themeMasha/wp-content/uploads/2020/01/2019-12-08-2.png"  alt="gif"  />
+                    </a>
+                  </div>
+            </div>
+            <div class="project__description">
+              <div class="remote">
+                <div class="topBar"></div>
+                <p class="project__text">built with <p>
+                <p class="project__text">Javascript <p>
+                <p class="project__text">Firebase API<p>
+                <p class="project__text">CSS grid<p>
+              
+              </div> 
+              
+              <button class="button__skills button">
+                <a class ="button__link" href="https://devpost.com/software/superpose" target="blank">
+                  more about Russian Doll
+                </a>
+                
+              </button> 
+            </div> 
+            <div class="project__description-mobile">
+                <div class="remote__mobile">
+                    <p class="text__mobile">
+                    Built with JavaScript, Firebase API
+                    </p>
+                  </div> 
+                  <button class="about__button">
+                    <a class ="button__link" href="/" target="blank">
+                      more about Russian Doll
+                    </a>
+                  </button> 
             </div>
              
           </div>
-          <!-- End Project 4 SuperPose-->
+          <!-- End Project 5 RussianDoll -->
         </div>
       </section>
       <!-- End Games Sections -->
       <section class="react">
-          <h1 class="heading__1">REACT.js HACKER NEWS</h1>
+          <h1 class="heading white">REACT.js HACKER NEWS</h1>
           <div class="project content" >  
               <div class="project__container" >
                     <!-- <p class ="project__heading">News Update</p>			 -->
@@ -205,26 +277,23 @@
           <!-- End Project 5 react-->
       </section>
      <!-- End React section --> 
-      <section class="web bg_white">
-        <h1> LANDING PAGES</h1>
-        <p id="web__info">Responsive web pages for fashion and e-commerce websites. Built using HTML5, css3, svg graphics, wordpress.</p>
-          <div class="project content" >  
-              <div id="landing_page_container" class="project__container" >
-                    <!-- <p class ="project__heading">Vivid Fashion</p>			 -->
-                    <div class="project__image">
-                        <a href="/">
-                          <img class="responsive" width="600px;" height="auto" src="images/vividFashion.png"  alt="Vivid Fashion"  />
-                      </a>
-                    </div>
-              </div>
-              <div class="mobile_landing_page">
-                  <img class="responsive__mobile responsive" width="180px; height="auto" src="./images/fp.png" alt="flowers">
-              </div>  
-            </div>
-            
-          <!-- End Project 6 Web Landing Pages-->
+
+     <section class="vortex_rings" id="projects">
+        <h1 class="heading sky">DYNAMICS OF VORTEX RINGS</h1>
+        <p class="vortex_rings__text">During an Aersopace Mentorship Program at Caltech I have studied dynamics of vortex rings. 
+          One of my goals was to determine the velocity of vortex rings
+          after they separate from the boundary layer and travel through the air.
+          I built 3d plots to visualize color profiles in RGB and HSV color spaces for an individual vortex ring
+          then detected vortex ring contours using Python and CV2, 
+          collecting coordinates along the way and building the velocity graph.
+        </p>
+        <div class="graphs_container">
+          <img src="http://localhost/themeMasha/wp-content/uploads/2020/01/Frame105_HSV_3dplot.png" alt="3d plot HSV Color space">
+          <img src="http://localhost/themeMasha/wp-content/uploads/2020/01/Frame105_RGB_3dplot.png" alt="sd plot RGB color space">
+        </div>
       </section>
-     <!-- End Web section --> 
+      <!-- End Vortex Rings -->
+     
     <section class="about" id="about">
       <div class="ellipse"></div>
       <p class="about__text">Hello! My name is <span class="yellow">Masha</span>. I am a <span class="yellow">full stack developer</span> living

@@ -26,5 +26,16 @@
             document.getElementById("sidenav").style.width = "0";
             document.body.classList.remove('navopen');
         }
+        document.addEventListener('DOMContentLoaded',function(){
+            var button = document.querySelector('.scroll-to-projects');
+            button.addEventListener('click', function(){
+                document.querySelector('#first_project').scrollIntoView({ 
+                behavior: 'smooth' 
+                
+              });
+        
+    });
+    console.log('hello');
+});
     </script>
 </html>
