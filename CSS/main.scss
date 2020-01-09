@@ -1,21 +1,15 @@
-@font-face {
-    font-family: 'proxima_novalight';
-    src: url('/CSS/fonts/ProximaNova-Light.woff') format('woff'),
-        url('/CSS/fonts/ProximaNova-Light.woff2') format('woff2');
-    /* font-weight: normal; */
-    font-style:normal;
-    font-style: normal;
-  }
-$sky1:#00bff3;
-$complimentary:#f34900;
-$monochromatic:#2cb4da;
-$border: #00bff3;
-$sky2:#27D1FF;
-$sky:rgba(0,191,243,0.9);
-$features_bg: #66D8F8;
-$body_text: #4b4b4b;
-$linkHover:  #143539;
-$skills:white;
+
+@import 'headings.scss';
+
+// @font-face {
+//     font-family: 'proxima_novalight';
+//     src: url('/CSS/fonts/ProximaNova-Light.woff') format('woff'),
+//         url('/CSS/fonts/ProximaNova-Light.woff2') format('woff2');
+    
+//     font-style:normal;
+//     font-style: normal;
+//   }
+
 
 *{
     box-sizing: border-box;
@@ -26,11 +20,12 @@ body{
     font-weight: 300;
     font-size: 15px;
     letter-spacing: 1px;
-    font-family: 'proxima_novalight','PT Sans', sans-serif;;
+    
 }
 html{
     width:100%;
-    height:100%; }
+    height:100%;
+    font-size:100%; }
 ul{
     padding:0;
     margin:0;
@@ -137,7 +132,7 @@ Header Styles
 .logo__text{
     color: white;
     font-size: 18px;
-    //font-weight: 900;
+    
     letter-spacing: 5px;
    // font-family: 'Raleway Dots', cursive;
    transform:rotate(-90deg);
@@ -253,9 +248,9 @@ VIDEO INTRO Styles
     p{
         position:absolute;
         bottom:4rem;
-        right:4rem;
+        // right:4rem;
         left:4rem;
-        font-size:1.7rem;
+        font-size:1.3rem;
         line-height:1.31;
         font-weight:400;
         color:white;
@@ -273,7 +268,7 @@ VIDEO INTRO Styles
     left:50%;
     transform:translateX(-50%);
     z-index:300;
-    font-size:9.5rem;
+    font-size:7.5rem;
     line-height:9rem;
     font-weight:400;
     color:white;
@@ -397,19 +392,14 @@ PROJECTS Styles
 .section{
     padding:100px;
 }
-.winner_projects{
-    padding:30px;
-}
-.games,.react,.web,.about{
+
+.games,.react,.web,.winner_projects,.vortex_rings, .about{
     padding:100px;
 }
 .bg_white{
     background-color:white;
     
-    h1{
-        color:$sky;
-        margin-bottom: 40px;
-    }
+  
     p{
         max-width: 800px;
         font-size:16px;
@@ -449,7 +439,8 @@ PROJECTS Styles
     width: 65%;
     padding: 40px 40px 20PX;
     border-radius: 40px;
-    box-shadow: 5px 10px 18px #888888;
+    box-shadow: 2rem 1rem 2rem rgba(0, 0, 0, 0.39);
+    transition:0.5s ease;
     .project__heading{
         color:$body_text;
         font-size: 24px;
@@ -458,6 +449,7 @@ PROJECTS Styles
 }
 .project__container:hover{
     box-shadow: 5px 10px $monochromatic;
+    
     border:2px solid $monochromatic;  
 }
 .project__description{
@@ -469,6 +461,7 @@ PROJECTS Styles
     padding: 16px 30px;
     border-radius:  20px;
     box-shadow: 5px 10px 18px 5px #888888;
+    box-shadow: 2rem 1rem 2rem rgba(0, 0, 0, 0.39);
     color:$body_text;
 }
 .project__description:hover{

@@ -29,19 +29,20 @@
 
 
    <section class="web bg_white">
-        <h1 class="heading"> WEBSITES & LANDING PAGES</h1>
+        <h1 class="heading__new"> Websites<span class="dot dot--blue"></span></h1>
+        <h2 class="subheading">E-commerce &nbsp;<span style="color:black">/</span> &nbsp;landing pages</h2>
         
         <div class="project content" >  
-            <div id="landing_page_container" class="project__container shadow" >
-                  <!-- <p class ="project__heading">Vivid Fashion</p>			 -->
+            <div id="landing_page_container" class="project__container " >
+                
                   <div class="project__image">
                       <a href="/">
-                        <img class="responsive" width="600px;" height="auto" src="http://localhost/themeMasha/wp-content/uploads/2020/01/GTF.png"  alt="Vivid Fashion"  />
+                        <img class="responsive" width="600px;" height="400px" src="http://localhost/themeMasha/wp-content/uploads/2020/01/GTF.png"  alt="Vivid Fashion"  />
                     </a>
                   </div>
             </div>
             <div class="mobile_landing_page">
-                <img class="responsive__mobile responsive" width="180px; height="auto" src="./images/fp.png" alt="flowers">
+                <img class="responsive__mobile responsive" width="180px; height="400px" src="./images/fp.png" alt="flowers">
             </div> 
         </div>
         <div class="project content" >  
@@ -57,189 +58,198 @@
                 <img class="responsive__mobile responsive" width="180px; height="auto" src="./images/fp.png" alt="flowers">
             </div> 
         </div>
-          
-        <!-- End Project 6 Web Landing Pages-->
+        
     </section>
-   <!-- End Web section --> 
+    <!-- End Web section --> 
 
      
-      <section class="section winner_projects white">
-          <div class="content">
-              <h1 class="heading">WINNER PROJECTS</h1>
-              <div class="project" > 
-                  <div class="project__container" >
-                      <p class ="project__heading">AImEe. Winner at FireDrone.AI 2019</p>
-                        <div class="project__image">
-                          <a href="https://devpost.com/software/aimmi" target="blank">
-                            <img class="responsive" width="600" height="350px" src="http://localhost/themeMasha/wp-content/uploads/2020/01/AImEe.gif"  alt="AImEe gif"  />
-                        </a>
-                      </div>
-                  </div>
-                  <div class="project__description">
-                    <div class="remote">
-                      <p class="project__text">built with <p>
-                      <p class="project__text">Python<p>
-                      <p class="project__text">Flask<p>
-                      <p class="project__text">azure ml<p>
-                      <p class="project__text">TensorFlow<p>
-                      <p class="project__text">model used:<p>
-                      <p class="project__text">inception V3<p>
-                    </div> 
-                    
-                    <button class="button__skills button">
-                      <a class ="button__link" href="https://devpost.com/software/aimmi" target="blank">
-                        more about AImEe
-                      </a> 
-                    </button> 
-                  </div>
-                  <div class="project__description-mobile">
-                      <div class="remote__mobile text_white">
-                          <p>Bulit with Python , Flask, Azure machine learning services,
-                            TensorFlow, used inception V3 model.
-                          </p>
-                        </div>
-                        <button class="about__button">
-                          <a class ="button__link" href="/" target="blank">
-                            more about AImmEe
-                          </a>
-                        </button> 
-                  </div>
-              </div>
-              <!-- End Project 2 Firedrone--> 
-              <div class="project ">
-                <div class="project__container">
-                  <p class ="project__heading">Summerize Winner at MLH Local Hack Day 2018</p>		
-                  <div class="image__container">
-                    <a href="https://devpost.com/software/Summerize" target="blank">
-                      <img class="responsive" width="600" height="auto" src="http://localhost/themeMasha/wp-content/uploads/2020/01/Summerize.gif"  alt="gif"  />
-                    </a>
-                  </div> 
+    <section class="winner_projects white">
+      <h1 class="heading__new">Winner<br> Projects<span class="dot dot--white"></span></h1>
+      <h2 class="subheading white">Hackathons&nbsp;<span style="color:black">/</span> &nbsp;competitions</h2>
+      <div class="content">
+            
+            <div class="project" > 
+                <div class="project__container" >
+                    <p class ="project__heading">AImEe. Winner at FireDrone.AI 2019</p>
+                      <div class="project__image">
+                        <a href="https://devpost.com/software/aimmi" target="blank">
+                          <img class="responsive" width="600" height="350px" src="http://localhost/themeMasha/wp-content/uploads/2020/01/AImEe.gif"  alt="AImEe gif"  />
+                      </a>
+                    </div>
                 </div>
                 <div class="project__description">
-                    <div class="remote">
-                      <div class="topBar"></div>
-                      <p class="project__text">built with <p>
-                      <p class="project__text">JavaScript<p>
-                      <p class="project__text">Express.js<p>
-                      <p class="project__text">Node.js<p>
-                      <p class="project__text">React<p>
-                      <p class="project__text">azure cognitive services api<p>
-                    </div>  
-                    
-                    <button class="button__skills button">
-                      <a class ="button__link" href="https://devpost.com/software/Summerize" target="blank">
-                        more about Summerize
-                      </a> 
-                    </button> 
+                  <div class="remote">
+                    <p class="project__text">built with <p>
+                    <p class="project__text">Python<p>
+                    <p class="project__text">Flask<p>
+                    <p class="project__text">azure ml<p>
+                    <p class="project__text">TensorFlow<p>
+                    <p class="project__text">model used:<p>
+                    <p class="project__text">inception V3<p>
+                  </div> 
+                  
+                  <button class="button__skills button">
+                    <a class ="button__link" href="https://devpost.com/software/aimmi" target="blank">
+                      more about AImEe
+                    </a> 
+                  </button> 
                 </div>
                 <div class="project__description-mobile">
                     <div class="remote__mobile text_white">
-                        <p>built with JavaScript, Express.js, Node.js, React, 
-                          azure cognitive services api </p>
+                        <p>Bulit with Python , Flask, Azure machine learning services,
+                          TensorFlow, used inception V3 model.
+                        </p>
                       </div>
                       <button class="about__button">
                         <a class ="button__link" href="/" target="blank">
-                          more about Summerize
+                          more about AImmEe
                         </a>
                       </button> 
                 </div>
-                 
-                <!-- End Project 3  Summerize-->
-              </div>         
-      </section>
-      <!-- End Winner Projects -->
-      <section class="games bg_white">
-        <div class="content">
-          <h1 heading>GAMES</h1>
+            </div>
+            <!-- End Project 2 Firedrone--> 
+            <div class="project ">
+              <div class="project__container">
+                <p class ="project__heading">Summerize Winner at MLH Local Hack Day 2018</p>		
+                <div class="image__container">
+                  <a href="https://devpost.com/software/Summerize" target="blank">
+                    <img class="responsive" width="600" height="auto" src="http://localhost/themeMasha/wp-content/uploads/2020/01/Summerize.gif"  alt="gif"  />
+                  </a>
+                </div> 
+              </div>
+              <div class="project__description">
+                  <div class="remote">
+                    <div class="topBar"></div>
+                    <p class="project__text">built with <p>
+                    <p class="project__text">JavaScript<p>
+                    <p class="project__text">Express.js<p>
+                    <p class="project__text">Node.js<p>
+                    <p class="project__text">React<p>
+                    <p class="project__text">azure cognitive services api<p>
+                  </div>  
+                  
+                  <button class="button__skills button">
+                    <a class ="button__link" href="https://devpost.com/software/Summerize" target="blank">
+                      more about Summerize
+                    </a> 
+                  </button> 
+              </div>
+              <div class="project__description-mobile">
+                  <div class="remote__mobile text_white">
+                      <p>built with JavaScript, Express.js, Node.js, React, 
+                        azure cognitive services api </p>
+                    </div>
+                    <button class="about__button">
+                      <a class ="button__link" href="/" target="blank">
+                        more about Summerize
+                      </a>
+                    </button> 
+              </div>
+                
+              <!-- End Project 3  Summerize-->
+            </div>         
+    </section>
+    <!-- End Winner Projects -->
+
+
+
+    <section class="games bg_white">
+      <h1 class="heading__new">Games<span class="dot dot--blue"></span></h1>
+      <h1 class="subheading blue">SuperPose&nbsp;<span style="color:black">/</span> &nbsp;Russian Doll</h1>
+      <div class="content">
         
-          <div class="project bg_blue" >  
-            <div class="project__container" >
-                  <p class ="project__heading">SuperPose Caltech Hacktech 2019</p>			
-                  <div class="project__image">
-                      <a href="https://devpost.com/software/superpose" target="blank">
-                        <img class="responsive" width="600" height="auto" src="http://localhost/themeMasha/wp-content/uploads/2020/01/superpose.gif"  alt="gif"  />
-                    </a>
-                  </div>
-            </div>
-            <div class="project__description">
-              <div class="remote">
-                <div class="topBar"></div>
-                <p class="project__text">built with <p>
-                <p class="project__text">Beautiful Soup <p>
-                <p class="project__text">Bootstrap <p>
-                <p class="project__text">eBay API <p>
-                <p class="project__text">Flask <p>
-                <p class="project__text">OpenPose<p>
-                <p class="project__text">TensorFlow<p>
-              </div> 
-              
-              <button class="button__skills button">
-                <a class ="button__link" href="https://devpost.com/software/superpose" target="blank">
-                  more about SuperPose
-                </a>
-                
-              </button> 
-            </div> 
-            <div class="project__description-mobile">
-                <div class="remote__mobile">
-                    <p class="text__mobile">
-                    Built with Beautiful Soup, Bootstrap, eBay API, Flask, OpenPose,TensorFlow
-                    </p>
-                  </div> 
-                  <button class="about__button">
-                    <a class ="button__link" href="/" target="blank">
-                      more about SuperPose
-                    </a>
-                  </button> 
-            </div>  
+
+        <div class="project bg_blue" >  
+          <div class="project__container" >
+                <p class ="project__heading">SuperPose Caltech Hacktech 2019</p>			
+                <div class="project__image">
+                    <a href="https://devpost.com/software/superpose" target="blank">
+                      <img class="responsive" width="600" height="auto" src="http://localhost/themeMasha/wp-content/uploads/2020/01/superpose.gif"  alt="gif"  />
+                  </a>
+                </div>
           </div>
-          <!-- End Project 4 SuperPose-->
-          <div class="project bg_blue" >  
-            <div class="project__container" >
-                  <p class ="project__heading">Russian Doll</p>			
-                  <div class="project__image">
-                      <a href="https://devpost.com/software/superpose" target="blank">
-                        <img class="responsive" width="600" height="auto" src="http://localhost/themeMasha/wp-content/uploads/2020/01/2019-12-08-2.png"  alt="gif"  />
-                    </a>
-                  </div>
-            </div>
-            <div class="project__description">
-              <div class="remote">
-                <div class="topBar"></div>
-                <p class="project__text">built with <p>
-                <p class="project__text">Javascript <p>
-                <p class="project__text">Firebase API<p>
-                <p class="project__text">CSS grid<p>
-              
-              </div> 
-              
-              <button class="button__skills button">
-                <a class ="button__link" href="https://devpost.com/software/superpose" target="blank">
-                  more about Russian Doll
-                </a>
-                
-              </button> 
+          <div class="project__description">
+            <div class="remote">
+              <div class="topBar"></div>
+              <p class="project__text">built with <p>
+              <p class="project__text">Beautiful Soup <p>
+              <p class="project__text">Bootstrap <p>
+              <p class="project__text">eBay API <p>
+              <p class="project__text">Flask <p>
+              <p class="project__text">OpenPose<p>
+              <p class="project__text">TensorFlow<p>
             </div> 
-            <div class="project__description-mobile">
-                <div class="remote__mobile">
-                    <p class="text__mobile">
-                    Built with JavaScript, Firebase API
-                    </p>
-                  </div> 
-                  <button class="about__button">
-                    <a class ="button__link" href="/" target="blank">
-                      more about Russian Doll
-                    </a>
-                  </button> 
-            </div>
-             
-          </div>
-          <!-- End Project 5 RussianDoll -->
+            
+            <button class="button__skills button">
+              <a class ="button__link" href="https://devpost.com/software/superpose" target="blank">
+                more about SuperPose
+              </a>
+              
+            </button> 
+          </div> 
+          <div class="project__description-mobile">
+              <div class="remote__mobile">
+                  <p class="text__mobile">
+                  Built with Beautiful Soup, Bootstrap, eBay API, Flask, OpenPose,TensorFlow
+                  </p>
+                </div> 
+                <button class="about__button">
+                  <a class ="button__link" href="/" target="blank">
+                    more about SuperPose
+                  </a>
+                </button> 
+          </div>  
         </div>
-      </section>
-      <!-- End Games Sections -->
-      <section class="react">
-          <h1 class="heading white">REACT.js HACKER NEWS</h1>
+        <!-- End Project 4 SuperPose-->
+        <div class="project bg_blue" >  
+          <div class="project__container" >
+                <p class ="project__heading">Russian Doll</p>			
+                <div class="project__image">
+                    <a href="https://devpost.com/software/superpose" target="blank">
+                      <img class="responsive" width="600" height="auto" src="http://localhost/themeMasha/wp-content/uploads/2020/01/2019-12-08-2.png"  alt="gif"  />
+                  </a>
+                </div>
+          </div>
+          <div class="project__description">
+            <div class="remote">
+              <div class="topBar"></div>
+              <p class="project__text">built with <p>
+              <p class="project__text">Javascript <p>
+              <p class="project__text">Firebase API<p>
+              <p class="project__text">CSS grid<p>
+            
+            </div> 
+            
+            <button class="button__skills button">
+              <a class ="button__link" href="https://devpost.com/software/superpose" target="blank">
+                more about Russian Doll
+              </a>
+              
+            </button> 
+          </div> 
+          <div class="project__description-mobile">
+              <div class="remote__mobile">
+                  <p class="text__mobile">
+                  Built with JavaScript, Firebase API
+                  </p>
+                </div> 
+                <button class="about__button">
+                  <a class ="button__link" href="/" target="blank">
+                    more about Russian Doll
+                  </a>
+                </button> 
+          </div>
+            
+        </div>
+        <!-- End Project 5 RussianDoll -->
+      </div>
+    </section>
+    <!-- End Games Sections -->
+
+
+<section class="react">
+      <h1 class="heading__new">React<span class="dot dot--white"></span></h1>
+          <h1 class="subheading white">REACT.js application&nbsp;<span style="color:black">/</span> &nbsp;HACKER NEWS</h1>
           <div class="project content" >  
               <div class="project__container" >
                     <!-- <p class ="project__heading">News Update</p>			 -->
@@ -279,14 +289,9 @@
      <!-- End React section --> 
 
      <section class="vortex_rings" id="projects">
-        <h1 class="heading sky">DYNAMICS OF VORTEX RINGS</h1>
-        <p class="vortex_rings__text">During an Aersopace Mentorship Program at Caltech I have studied dynamics of vortex rings. 
-          One of my goals was to determine the velocity of vortex rings
-          after they separate from the boundary layer and travel through the air.
-          I built 3d plots to visualize color profiles in RGB and HSV color spaces for an individual vortex ring
-          then detected vortex ring contours using Python and CV2, 
-          collecting coordinates along the way and building the velocity graph.
-        </p>
+     <h1 class="heading__new"> Python<span class="dot dot--blue"></span></h1>
+        <h2 class="subheading sky">Research&nbsp;<span style="color:black">/</span> &nbsp;Visualizations&nbsp;<span style="color:black">/</span>DYNAMICS OF VORTEX RINGS</h2>
+      
         <div class="graphs_container">
           <img src="http://localhost/themeMasha/wp-content/uploads/2020/01/Frame105_HSV_3dplot.png" alt="3d plot HSV Color space">
           <img src="http://localhost/themeMasha/wp-content/uploads/2020/01/Frame105_RGB_3dplot.png" alt="sd plot RGB color space">
