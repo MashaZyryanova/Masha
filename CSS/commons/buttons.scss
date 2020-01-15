@@ -1,0 +1,139 @@
+@import 'colors.scss';
+.button{
+    border-radius: 20px;
+    border: 1px solid $sky;
+    color: white;
+    background-color: $sky;
+    margin-top: 20px;
+    padding: 5px 25px;
+}
+//about button
+
+.about__button{
+    background-color:white;
+    color:$sky;
+    border:1px solid $sky;
+    padding:15px 30px;
+    border-radius: 10px;
+    font-size:16px;
+    text-transform:uppercase;
+     margin-top: 40px;
+    margin-left:70%;
+    .button__link{
+        color:$sky;
+        text-decoration: none;
+        color:$monochromatic;
+    }
+}
+.about__button:hover{
+    color:$complimentary;
+    border: 2px solid $complimentary;
+    text-decoration: none;
+    .button__link{
+        color:$complimentary;
+    }
+}
+
+.button__skills{
+    position:absolute;
+    left:50%;
+    bottom:20px;
+    transform:translateX(-50%);
+    width:140px;
+    border:none;
+    letter-spacing: 2px;
+    padding: 45px 5px;
+    border-radius: 80%;
+    background-color: $sky;
+    box-shadow: 1px 2px 3px $sky;
+    transform-origin:left;
+    animation: pulse-button 1.25s infinite alternate;
+    animation-fill-mode: forwards;
+    .button__link{
+        color:white;
+        text-decoration: none;
+    }
+}
+.button__skills:hover{
+    background-color:white;
+    border:2px solid $sky;
+    .button__link{
+        color: $sky;
+        text-decoration: none;
+    }
+}
+@keyframes pulse-button{
+    0%{
+        transform:scale(1);
+    }
+    
+    100%{
+        transform:scale(1.1);
+    }
+}
+// scroll to projects button
+.scroll-to-projects{
+    border:2px solid $sky;
+    background:rgba(16, 193, 242, 0.16);
+    height:55px;
+    width:55px;
+    border-radius:50%;
+    position:absolute;
+    bottom:5.5rem;
+    left:50%;
+    transform:translateX(-50%);
+    animation:toProjects .4s infinite;
+    z-index:999;
+}
+
+.arrow{
+    z-index:999;
+    position:absolute;
+    bottom:15px;
+    left:15px;
+    border: solid #00bff3;
+    border-width: 0 3px 3px 0;
+    padding:10px;
+    display:inline-block;
+    transform:rotate(45deg);
+}
+
+.explore{
+    font-size:14px;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+}
+
+.explore--dark{
+    color:$body_text;
+}
+.explore::before{
+    content:" ";
+    width:90px;
+    height:1px;
+    background:$sky;
+    display:inline-block;
+    margin-right:15px;
+    margin-bottom:6px;
+    transform-origin:left;
+    transition:0.2s ease-in;
+}
+.explore--white::before{
+    background:$body_text;
+}
+
+.explore:hover::before{
+    margin-right:55px;
+    transform:scaleX(1.5);
+    transform-origin:left;
+}
+.explore:hover{
+    color:$sky;
+    text-decoration: none;
+}
+.explore--white:hover{
+    color:$body_text;
+}
+#explore-summerize{
+    margin-bottom:20px;
+}

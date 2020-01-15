@@ -1,0 +1,44 @@
+@media screen and(max-width: 1250px){
+    .content{
+        max-width:1000px;
+    }
+}
+
+
+.web{
+    padding-top:100px;
+    margin-bottom:100px;
+}
+.react{
+    
+    padding-top:60px;
+}
+.games,.python{
+    margin-bottom:100px;
+}
+.winners{
+    padding-top:60px;
+}
+.bio{
+    padding:40px 0;
+}
+.skills{
+    padding:100px 0px;
+}
+
+
+
+
+// web
+@media (max-width:992px){
+      
+    .web{
+        margin-top: 100px;
+        margin-bottom:0px;
+        padding:50px;
+    }
+    
+    
+}
+
+
