@@ -1,45 +1,22 @@
-@media screen and (max-width: 980px) {
-  .mobile_landing_page {
-    width: 35%;
-    padding: 55px 20px;
-  }
-  #landing_page_container {
-    margin-bottom: 70px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .mobile_landing_page {
-    width: 60%;
-    padding: 55px 20px;
-  }
-  #landing_page_container {
-    width: 95%;
-    margin-bottom: 70px;
-  }
-}
-
 .content--web {
   position: relative;
   width: 1270px;
   height: 89vh;
-  margin: 0 auto;
-  margin-top: -170px;
+  margin: -120px auto 0px;
 }
 
 .project--web {
   position: absolute;
   width: 69%;
-  background-color: white;
-  max-width: 69%;
   height: auto;
   padding: 40px 40px 20PX;
   border-radius: 40px;
+  background-color: white;
   -webkit-box-shadow: 2rem 1rem 2rem rgba(0, 0, 0, 0.39);
           box-shadow: 2rem 1rem 2rem rgba(0, 0, 0, 0.39);
   -webkit-transition: 0.7s ease-in;
   transition: 0.7s ease-in;
-  border: 1px solid #93d1dfc7;
+  border: 2px solid #93d1dfc7;
 }
 
 .project--web__one {
@@ -64,59 +41,37 @@
 
 @media screen and (max-width: 1440px) {
   .content--web {
-    margin-top: -70px;
-    width: 1200px;
+    margin-top: -50px;
+    width: 1174px;
   }
   .project--web {
     width: 65%;
-    border: 2px solid #93d1dfc7;
   }
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1249px) {
   .content--web {
-    width: 1000px;
+    width: 850px;
     margin-top: -10px;
   }
 }
 
-@media screen and (max-width: 1024px) {
-  .content--web {
-    width: 850px;
-  }
-  .project--web {
-    border: 1px solid blue;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .content--web {
-    width: 850px;
-  }
-  .project--web {
-    border: 1px solid red;
-  }
-}
-
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991.98px) {
   .content--web {
     position: static;
     height: auto;
     width: 90%;
+    margin-top: 40px;
   }
   .project--web {
     position: static;
-    border: 2px solid pink;
-    max-width: 90%;
-    width: 90%;
-    margin: 0 auto;
-    margin-bottom: 40px;
+    width: 100%;
+    margin: 0 auto 40px;
   }
   .project--web__three {
-    position: relative !important;
-    top: 250px;
-    left: 370PX;
-    border: 1px solid yellow;
+    position: static;
+    -webkit-transform: translate(10px, 10px);
+            transform: translate(10px, 10px);
   }
 }
 /*# sourceMappingURL=webs.css.map */

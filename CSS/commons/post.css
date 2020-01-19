@@ -1,24 +1,11 @@
 #posts {
-  width: 1300px;
-  margin: 0 auto;
   margin-top: 200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  padding: 20px;
+  border: 1px solid blue;
 }
 
 .entry {
-  width: 33.33%;
-  margin-bottom: 50px;
-}
-
-entry:not(:last-child) {
-  margin-right: 20px;
+  border: 1px solid green;
 }
 
 .entry-image {
@@ -31,24 +18,93 @@ entry:not(:last-child) {
   max-height: 290px;
 }
 
-.entry-title > h2 {
-  margin-bottom: 20px;
-}
-
-.entry-title a {
-  color: rgba(0, 191, 243, 0.9);
-  text-align: center;
-}
-
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 768px) {
+  #posts {
+    padding: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
   .entry {
+    width: 47%;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #posts {
+    max-width: 1400px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .entry {
+    width: 32%;
+  }
+}
+
+#post {
+  margin-top: 115px;
+}
+
+.post__heading-wrapper {
+  padding: 10px 40px;
+}
+
+.post__description {
+  width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+  .post__heading-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .post__heading, .post__description {
     width: 50%;
   }
 }
 
-@media screen and (max-width: 768px) {
-  .entry {
-    width: 90%;
-  }
+.color-wrapper {
+  width: 100vw;
+  background-color: rgba(0, 191, 243, 0.9);
+}
+
+.wrapper__top {
+  height: 250px;
+  width: 100%;
+  background-color: #00b2e2;
+}
+
+.wrapper__main {
+  width: 85%;
+  margin-top: -210px;
+  margin-right: auto;
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero__image {
+  width: 44%;
+}
+
+.hero__image img {
+  width: 100%;
+}
+
+.hero__image:not(:last-child) {
+  margin-right: 20px;
 }
 /*# sourceMappingURL=post.css.map */

@@ -1,13 +1,15 @@
 @import 'colors.scss';
-
+.content--games{
+    max-width:1300px;
+    margin:50px auto 0px;
+}
 .project{
     display: flex;
     justify-content: space-between;  
 }
 .project:not(:last-child){
-    padding-bottom:80px;
+    padding-bottom:40px;
 }
-
 .project__container{
     text-align: center;
     background-color: white;
@@ -29,46 +31,112 @@
     border:2px solid $projectBorder;
 }
 
-.graphs_container{
-    margin:0 auto;
-    max-width:1200px;
+.content--python{
+    max-width:1300px;
     display:flex;
     justify-content: space-between;  
-    margin-top:70px;
+    margin:70px auto 0px;
 }
 
 .python__container{
+    width:45%;
     text-align: center;
     background-color: white;
     height:auto;
-    //border-radius: 40px;
     padding-left:40px;
     border:2px solid $projectBorder;
     box-shadow: 2rem 1rem 2rem rgba(0, 0, 0, 0.39);
     transition:0.7s ease-in;   
+    img{
+        width:100%!important;
+        height:auto;
+    }
 }
-
-
 .responsive{
     width:100%;
     height:auto;
-    //max-height:390px;
-    //max-width:600px;
 }
 .project__description-mobile{
     display:none;
 }
+
+
+.content--skills{
+    clear: both;
+    display: flex;
+    justify-content: space-between;
+    width:1300px;
+    margin:0 auto;
+}
+
+.content--skills__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid $projectBorder;
+    border-radius: 20px;
+    color: $sky;
+    padding:25px 30px;
+    box-shadow: 18px -10px 2px 2px $projectBorder;
+    z-index:999;
+    p{
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        line-height:28px;
+        color:$body_text;
+    }
+}
+.content--skills__container:hover{
+    box-shadow: 18px -10px 2px 2px $monochromatic;
+    border: 1px solid $monochromatic;
+    .content--skills__heading{
+        color:$complimentary;
+    }
+}
+.content--skills__heading{
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 35px;
+    color:black;
+}
+
+
 @media screen and (max-width:1440px){
-    .content, .graphs_container{
+    .content{
+        width:1200px;
+    }
+    .content--python{
         width:1200px;
     }
     .project__container{
         width:60%;
     }
+    .content--skills{
+        padding-bottom:160px;
+    }
 }
 @media screen and (max-width: 1250px) {
-    .content,.graphs_container {
+    .content {
       max-width: 1000px;
+    }
+    .content--python{
+        width:80%;
+    }
+    .python__container{
+        width:45%;
+        img{
+            width:100%;
+            height:auto;
+        }
+    }
+    .content--skills__container{
+        padding:20px 10px;
+    }
+    .content--skills__container{
+        z-index:0;
     }
   }
 
@@ -78,30 +146,34 @@
      align-items:center;
     }
     .project__container{
-        width:90%;
-        max-width:90%;
-        margin-bottom:40px;
+        width:69%;
+        max-width:69%;
     }
-    .skills__container:not(:last-child){
+    .content--skills__container:not(:last-child){
         margin-bottom:40px;
     }
     .project__description{
         display:none;
     }
-   
-    #games__info{
-        line-height: 1.6em;
-        font-size:20px;
-        max-width:98%;
+    .content--skills{
+        flex-direction: column;
+        align-items:center;
+        width:55%;
     }
-    .mobile__text{
-        line-height: 1.6em;
-        font-size:20px;
-        max-width:98%;
+    .content--skills__container{
+        width:100%;
+        
+        padding:20px 2px;
+    }
+    .content--skills__heading{
+        max-width:80%;
     }
 }
-
-@media screen and (max-width:1024px){
+@media screen and (max-width:1023.98px){
+    .project__container{
+        width:100%;
+        max-width: 100%;
+    }
     .project__description-mobile{
         display: block;
         font-size:20px;
@@ -109,59 +181,53 @@
         text-align:center;
         line-height: 1.6em;
     } 
-    .graphs_container{
-        width:800px;
-    }
+   
     .content{
         width:800px;
     }
-    .python__container{
-        border:1px solid yellow;
-        width:46%;
-       
-    }
+    
     .python__container img{
         width:100%;
-        height:auto;
-        
+        height:auto;  
     }
     .python__container:not(:last-child){
         margin-bottom:40px;
     }
-    .skills{
-        flex-direction: column;
-        align-items:center;
-    }
-    .skills__container{
-        width:50%;
-    }
+  
 }
 
-@media screen and (max-width:992px){
+@media screen and (max-width:991.98px){
     
-    .graphs_container{
+    .content--python{
         flex-direction: column;
         align-items:center;
     }
     .python__container{
-        border:1px solid pink;
-        width:80%;
-        img{
-            width:100%;
-            height:auto;
-        }
+        width:80%;   
     }
-    
+    .content--skills{
+        max-width:62% !important;
+    }
 }
-@media screen and (max-width:577px){
-    .project__container{
-        width:95%;
+
+@media screen and (max-width:767.98px){
+    .content--games{
+        width:98%!important;
     }
-    .project__description-mobile{
-        display: block;
-        font-size:20px;
-        max-width:98%;
-        line-height: 1.7em;
-        text-align:center;
-    } 
+    .project__container{
+        width:100%;
+        padding:25px 25px;
+    }
+   .project__heading{
+       display:none;
+   }
+   .python__container{
+       width:100%;
+   }
+   .content--skills__heading{
+       font-size:1.2rem;
+   }
+   .content--skills__container p{
+       font-size:1rem;
+   }
 }

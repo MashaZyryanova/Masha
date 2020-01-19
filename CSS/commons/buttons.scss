@@ -33,12 +33,14 @@
         color:$complimentary;
     }
 }
-
-.button__skills{
+.button__wrapper{
     position:absolute;
     left:50%;
-    bottom:20px;
-    transform:translateX(-50%);
+    bottom:40px;
+    transform:translateX(-52%);
+}
+.button__content--skills{
+    
     width:140px;
     border:none;
     letter-spacing: 2px;
@@ -54,7 +56,7 @@
         text-decoration: none;
     }
 }
-.button__skills:hover{
+.button__content--skills:hover{
     background-color:white;
     border:2px solid $sky;
     .button__link{
@@ -136,4 +138,9 @@
 }
 #explore-summerize{
     margin-bottom:20px;
+}
+@media screen and (max-width:767.98px){
+    .explore{
+        font-size:0.7rem;
+    }
 }

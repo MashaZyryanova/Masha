@@ -1,22 +1,11 @@
-.react__projects {
+.content--react, .content--winner__projects {
   position: relative;
   height: 800px;
-  margin-top: -100px;
-}
-
-.winner__projects {
-  position: relative;
-  height: 800px;
-  margin-top: -100px;
+  margin: -100px auto 0px;
 }
 
 .react__description-mobile {
   display: none;
-  border: 2px solid red;
-}
-
-#project__container--winner {
-  width: 100% !important;
 }
 
 .react__container, .winner__container {
@@ -28,15 +17,13 @@
 }
 
 .react__container {
-  max-width: 69%;
   width: 69%;
 }
 
 .winner__container {
   padding: 40px 40px 20PX;
   background-color: white;
-  width: 60%;
-  max-width: 60%;
+  width: 69%;
 }
 
 #react-1, #winner-1 {
@@ -51,60 +38,66 @@
 }
 
 @media screen and (max-width: 1440px) {
-  .react__projects, .winner__projects {
+  .content--react, .content--winner__projects {
     margin-top: -70px;
     width: 1200px;
     height: 650px;
   }
   .react__container, .winner__container {
     width: 60%;
-    border: 2px solid green;
   }
 }
 
-@media screen and (max-width: 1250px) {
-  .react__projects, .winner__projects {
-    width: 1000px;
+@media screen and (max-width: 1249px) {
+  .content--react, .content--winner__projects {
+    width: 850px;
+    height: 560px;
+  }
+  .content--react {
     margin-top: -10px;
   }
-}
-
-@media screen and (max-width: 1024px) {
-  .react__projects, .winner__projects {
-    width: 850px;
-    height: 500px;
+  .content--winner__projects {
+    margin-top: 30px;
   }
   .react__container, .winner__container {
-    border: 1px solid blue;
+    width: 69%;
+  }
+}
+
+@media screen and (max-width: 1023.98px) {
+  .content--react, .content--winner__projects {
+    height: 500px;
   }
   .waive--white {
     margin-top: 0px;
   }
+  #react-1, #react-2, #winner-1, #winner-2 {
+    position: relative;
+    z-index: 997;
+  }
 }
 
-@media screen and (max-width: 992px) {
-  .react__projects, .winner__projects {
+@media screen and (max-width: 991.98px) {
+  .content {
+    width: 90%;
+  }
+  .content--react, .content--winner__projects {
     position: static;
     height: auto;
-    border: 1px solid coral;
+    width: 90%;
+  }
+  .content--react {
+    margin-top: 30px;
   }
   .react__container, .winner__container {
     position: static;
-    min-width: 80%;
-    margin: 0 auto;
-    margin-bottom: 20px;
+    width: 100%;
+    margin: 0 auto 20px;
   }
   .react__description-mobile {
     display: block;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .react__projects, .winner__projects {
-    border: 2px solid cornflowerblue;
-  }
-  .react__container, .winner__container {
-    position: static;
+    width: 90%;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=react.css.map */

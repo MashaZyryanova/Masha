@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
         <?php wp_head()?>
        
         <script src="https://kit.fontawesome.com/1ec81f68fa.js"></script>
@@ -27,8 +28,8 @@
                         <hr class = "hover-border">
                     </li>
                     <li class="menu__item">
-                        <a href="#skills" class="menu__link link">
-                            skills
+                        <a href="#content--skills" class="menu__link link">
+                            content--skills
                         </a>
                     </li>
                     <li class="menu__item">
@@ -79,7 +80,7 @@
             GITHUB
           </a>
           <a href="#projects">WORK</a>
-          <a href="#skills">SKILLS</a>
+          <a href="#content--skills">SKILLS</a>
           <a href="#contact">CONTACT</a>
           <a href="#about">ABOUT</a>
       </div>

@@ -63,13 +63,20 @@ a{
 .waive--white__react{
     margin-top:-300px;
 }
-@media screen and (max-width:1024px){
+@media screen and (max-width:1249.98px){
     .waive--white__react{
         margin-top:-220px;
     }
     .waive--python{
         margin-top:-160px;
     }
+}
+@media screen and (max-width:1023.98px){
+    .waive--white__react{
+        position:relative;
+        z-index:0;
+    }
+    
 }
 .waive--games{
     margin-top:-100px;
@@ -110,7 +117,7 @@ hr{
 }
 .content{
     max-width: 1300px;
-    margin: auto;
+    
 }
 @media screen and (max-width: 1250px) {
     .content {
@@ -279,36 +286,7 @@ Header Styles
 
 
 
-.mobile_landing_page{
-    background-color: white;
-    width: 20%;
-    padding: 25px 20px ;
-    border-radius: 40px;
-    box-shadow: 5px 10px 18px #888888;
-}
-.mobile_landing_page:hover{
-    box-shadow: 5px 10px $monochromatic;
-    border:2px solid $monochromatic;  
-}
-@media screen and (max-width:980px){
- .mobile_landing_page{
-     width:35%;
-     padding:55px 20px;
- }
- #landing_page_container{
-     margin-bottom:70px;
- }
-}
-@media screen and (max-width:767px){
-    .mobile_landing_page{
-        width:60%;
-        padding:55px 20px;
-    }
-    #landing_page_container{
-        width:95%;
-        margin-bottom:70px;
-    }
-   }
+
 // about section
 .about{
     overflow: hidden;
@@ -346,69 +324,19 @@ Header Styles
         margin:40px auto;
     }
 }
-@media screen and(max-width:577px){
+@media screen and (max-width:767.98px){
+    .about__text{
+        font-size:0.8rem;
+        line-height:1.1rem;
+    }
+}
+@media screen and(max-width:576.98px){
     .about{
         width:97%;
         padding:40px;
-        p{
-            line-height: 2em;
-            font-size:20px;
-        }
     }
 }
-//skills styles
-.skills{
-    clear: both;
-    display: flex;
-    justify-content: space-between;
-    max-width: 1230px; 
-}
-.skills__container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    border: 1px solid $projectBorder;
-    border-radius: 20px;
-    color: $sky;
-    padding:25px 30px;
-    box-shadow: 18px -10px 2px 2px $projectBorder;
-    z-index:999;
-    p{
-        font-size: 16px;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        line-height:28px;
-        color:$body_text;
-    }
-}
-.skills__container:hover{
-    box-shadow: 18px -10px 2px 2px $monochromatic;
-    border: 1px solid $monochromatic;
-    .skills__heading{
-        color:$complimentary;
-    }
-}
-.skills__heading{
-    font-size: 24px;
-    text-align: center;
-    margin-bottom: 35px;
-    color:black;
-}
-@media screen and (max-width:1201px){
-    .skills__container{
-        padding:20px 10px;
-    }
-}
-@media screen and (max-width:1100px){
-    .skills__container{
-        padding:20px 2px;
-    }
-    .skills__heading{
-        max-width:80%;
-    }
-}
+
 .site__footer{
     position:relative;
     text-align: center; 
@@ -446,7 +374,7 @@ waive>svg{
 }
 .phone{
     letter-spacing: 5px;
-    color:$skills;
+    color:$content--skills;
     margin-bottom: 60px;
 }
 .footer__heading:hover{
@@ -458,9 +386,15 @@ waive>svg{
 i.fab{
     color:white;
     padding: 0 10px;
+    transition: all 0.5s ease-in-out;
 }
 i.fab:hover{
     color:$complimentary;
+}
+@media screen and (max-width:1100px){
+    .site__footer{
+        margin-top:-150px;
+    }
 }
 @media screen and (max-width:980px){
     .site__footer{

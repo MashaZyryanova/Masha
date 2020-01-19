@@ -1,5 +1,6 @@
 <?php
-//variables
+//Setup
+define('MZ_DEV_MODE', true);
 
 //includes
 include(get_theme_file_path('/includes/front/enqueue.php'));

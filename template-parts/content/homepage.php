@@ -25,7 +25,7 @@
     <div class="section__text">
       <h1 class="heading__new"> Websites<span class="dot dot--blue"></span></h1>
       <h2 class="subheading subheading--blue">E-commerce &nbsp;<span style="color:black">/</span> &nbsp;landing pages</h2>
-      <a class="explore explore--dark" href="#">more work</a>
+      <a class="explore explore--dark" href="http://localhost/themeMasha/websites/">more work</a>
     </div>
     <div class="content--web">
       <div class="project--web project--web__one" >  
@@ -71,11 +71,6 @@
 <!-- End Web section --> 
 
 
-
-<!-- <div class="waive waive--blue">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#19c5f4d1" fill-opacity="1" d="M0,256L60,240C120,224,240,192,360,202.7C480,213,600,267,720,250.7C840,235,960,149,1080,128C1200,107,1320,149,1380,170.7L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
-</div> -->
-
 <section class="section react section__bg--blue">
   <div class="section__text section__text-react">
       <h1 class="heading__new">React<span class="dot dot--white"></span></h1>
@@ -84,7 +79,7 @@
       <a class="explore explore--white " href="#">explore</a>
   </div>   
 
-  <div class="react__projects content" >  
+  <div class="content--react content" >  
     <div class="react__container" id="react-1" >
           <!-- <p class ="project__heading">News Update</p>			 -->
           <div class="project__image">
@@ -92,22 +87,7 @@
                 <img src="http://localhost/themeMasha/wp-content/uploads/2020/01/2020-01-12.png" class="responsive" width="600" height="auto" alt="News Update"  />
               </a>
           </div>
-    </div>
-              <!-- <div class="project__description">
-                <div class="remote">
-                  <p class="project__text">React
-                  Redux</p>
-                  <p class="project__text">Hacker News API <p>
-                  <p class="project__text">JavaScript<p>
-                </div>  
-                <button class="button__skills button">
-                  <a class ="button__link" href="https://newsupdate2020.herokuapp.com/" target="blank">
-                    more about News Update
-                  </a>
-                </button> 
-              </div>  -->
-   
-
+    </div>      
     <div class="react__container" id="react-2">
           <!-- <p class ="project__heading">News Update</p>			 -->
           <div class="project__image">
@@ -115,39 +95,24 @@
                 <img src="http://localhost/themeMasha/wp-content/uploads/2020/01/2020-01-12.png" class="responsive" width="600" height="auto" alt="News Update"  />
               </a>
           </div>
-    </div>
-
-    <div class="react__description-mobile">
-      <div class="remote__mobile text_white">
-          <p>BUILT WITH REACT REDUX HACKER NEWS API JAVASCRIPT</p>
-        </div>
-        <button class="about__button">
-          <a class ="button__link" href="/" target="blank">
-            more about News Update
-          </a>
-        </button> 
-    </div>
-
-              
-  </div>
-          
+    </div>     
+  </div>        
 </section>
 <!-- End React section --> 
 
 
-
 <div class=" waive waive--white waive--white__react">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,256L60,240C120,224,240,192,360,202.7C480,213,600,267,720,250.7C840,235,960,149,1080,128C1200,107,1320,149,1380,170.7L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,256L60,240C120,224,240,192,360,202.7C480,213,600,267,720,250.7C840,235,960,149,1080,128C1200,107,1320,149,1380,170.7L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
 </div>
 
 <section class="section games section__bg--white">
   <div class="section__text">
     <h1 class="heading__new">Games<span class="dot dot--blue"></span></h1>
     <h1 class="subheading subheading--blue">SuperPose&nbsp;<span style="color:black">/</span> &nbsp;Russian Doll</h1>
+    <a class="explore explore--dark" id="explore-summerize" href="#">explore summerize</a><br>
+    <a class="explore explore--dark" href="#">explore AImEe</a>
   </div>
-  <div class="content">
-    
-
+  <div class="content--games content">
     <div class="project" >  
       <div class="project__container" >
             <p class ="project__heading">SuperPose Caltech Hacktech 2019</p>			
@@ -168,26 +133,15 @@
           <p class="project__text">OpenPose<p>
           <p class="project__text">TensorFlow<p>
         </div> 
-        
-        <button class="button__skills button">
-          <a class ="button__link" href="https://devpost.com/software/superpose" target="blank">
-            explore<br> SuperPose
-          </a>
-          
-        </button> 
+        <div class="button__wrapper">
+          <button class="button__content--skills button">
+            <a class ="button__link" href="https://devpost.com/software/superpose" target="blank">
+              explore<br> SuperPose
+            </a> 
+          </button> 
+        </div>
       </div> 
-      <div class="project__description-mobile">
-          <div class="remote__mobile">
-              <p class="text__mobile">
-              Built with Beautiful Soup, Bootstrap, eBay API, Flask, OpenPose,TensorFlow
-              </p>
-            </div> 
-            <button class="about__button">
-              <a class ="button__link" href="/" target="blank">
-                explore about SuperPose
-              </a>
-            </button> 
-      </div>  
+     
     </div>
     <!-- End Project 4 SuperPose-->
     <div class="project" id="rd" >  
@@ -208,26 +162,17 @@
           <p class="project__text">CSS grid<p>
         
         </div> 
-        
-        <button class="button__skills button">
-          <a class ="button__link" href="https://devpost.com/software/superpose" target="blank">
-           explore <br>Russian Doll
-          </a>
-          
-        </button> 
+       
+        <div class="button__wrapper">
+          <button class="button__content--skills button">
+            <a class ="button__link" href="https://devpost.com/software/superpose" target="blank">
+            explore <br>Russian Doll
+            </a>
+            
+          </button> 
+        </div>
       </div> 
-      <div class="project__description-mobile">
-          <div class="remote__mobile">
-              <p class="text__mobile">
-              Built with JavaScript, Firebase API
-              </p>
-            </div> 
-            <button class="about__button">
-              <a class ="button__link" href="/" target="blank">
-                more about Russian Doll
-              </a>
-            </button> 
-      </div>
+      
         
     </div>
     <!-- End Project 5 RussianDoll -->
@@ -236,13 +181,7 @@
 <!-- End Games Sections -->
 
 
-
-<!-- <div class="waive waive--games">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#19c5f4d1" fill-opacity="1" d="M0,256L60,240C120,224,240,192,360,202.7C480,213,600,267,720,250.7C840,235,960,149,1080,128C1200,107,1320,149,1380,170.7L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
-</div> -->
-
-
-<section class=" section winners section__bg--blue">
+<section class="section winners section__bg--blue">
   <div class="section__text section__text--winners">
     <h1 class="heading__new">Winners<span class="dot dot--white"></span></h1>
     <h2 class="subheading subheading--white">Hackathons&nbsp;<span style="color:black">/</span> &nbsp;competitions</h2>
@@ -250,7 +189,7 @@
     <a class="explore explore--white" href="#">explore AImEe</a>
   </div>
     
-  <div class="winner__projects content">
+  <div class="content--winner__projects content">
      
         <div class="winner__container" id="winner-1" >
             <p class ="project__heading">AImEe. Winner at FireDrone.AI 2019</p>
@@ -271,25 +210,13 @@
             <p class="project__text">inception V3<p>
           </div> 
           
-          <button class="button__skills button">
+          <button class="button__content--skills button">
             <a class ="button__link" href="https://devpost.com/software/aimmi" target="blank">
               more about AImEe
             </a> 
           </button> 
         </div> -->
-        <div class="react__description-mobile">
-            <div class="remote__mobile text_white">
-                <p>Bulit with Python , Flask, Azure machine learning services,
-                  TensorFlow, used inception V3 model.
-                </p>
-              </div>
-              <button class="about__button">
-                <a class ="button__link" href="/" target="blank">
-                  more about AImmEe
-                </a>
-              </button> 
-        </div>
-    
+      
         <!-- End Project 2 Firedrone--> 
     
     <div class="winner__container" id="winner-2">
@@ -300,41 +227,12 @@
         </a>
       </div> 
     </div>
-      <!-- <div class="project__description">
-          <div class="remote">
-            <div class="topBar"></div>
-            <p class="project__text">built with <p>
-            <p class="project__text">JavaScript<p>
-            <p class="project__text">Express.js<p>
-            <p class="project__text">Node.js<p>
-            <p class="project__text">React<p>
-            <p class="project__text">azure cognitive services api<p>
-          </div>  
-          
-          <button class="button__skills button">
-            <a class ="button__link" href="https://devpost.com/software/Summerize" target="blank">
-              more about Summerize
-            </a> 
-          </button> 
-      </div> -->
-      <div class="react__description-mobile">
-          <div class="remote__mobile text_white">
-              <p>built with JavaScript, Express.js, Node.js, React, 
-                azure cognitive services api </p>
-            </div>
-            <button class="about__button">
-              <a class ="button__link" href="/" target="blank">
-                more about Summerize
-              </a>
-            </button> 
-      </div>
+    
       <!-- End Project 3  Summerize-->
     
   </div>        
 </section>
 <!-- End Winner Projects -->
-
-
 
 <div class="waive waive--python">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,256L60,240C120,224,240,192,360,202.7C480,213,600,267,720,250.7C840,235,960,149,1080,128C1200,107,1320,149,1380,170.7L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
@@ -348,23 +246,19 @@
         <a class="explore explore--dark" href="#">explore</a>
   </div>
 
-  <div class="graphs_container">
+  <div class="content--python">
     <div class="python__container">
       <img src="http://localhost/themeMasha/wp-content/uploads/2020/01/Frame105_HSV_3dplot.png" alt="3d plot HSV Color space">
     </div>
     <div class="python__container">
       <img src="http://localhost/themeMasha/wp-content/uploads/2020/01/Frame105_RGB_3dplot.png" alt="sd plot RGB color space">
     </div>
-    </div>
+  </div>
 
 </section>
 <!-- End Python -->
 
 
-
-<!-- <div class="waive">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#19c5f4d1" fill-opacity="1" d="M0,256L60,240C120,224,240,192,360,202.7C480,213,600,267,720,250.7C840,235,960,149,1080,128C1200,107,1320,149,1380,170.7L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
-</div> -->
 <section class="bio section__bg--blue" >
     <div class="about" id="about">
       <div class="ellipse"></div>
@@ -385,11 +279,11 @@
 <!-- End About -->
 
 
-<section class="bg_white" id="skills">
-     <!-- <h1 class="heading__1">SKILLS</h1> -->
-      <div class="skills content" >
-        <div class="skills__container">
-          <h2 class = "skills__heading">Languages and Workflow</h2>
+<section class="section skills bg_white">
+    
+      <div class="content--skills content" >
+        <div class="content--skills__container">
+          <h2 class = "content--skills__heading">Languages and Workflow</h2>
           <p>C</p>
           <p>C++</p>
           <p>Python</p>
@@ -398,8 +292,8 @@
           <p>R</p>
           <p>GIT VCS</p>
         </div>
-        <div class="skills__container">
-          <h2 class = "skills__heading">Client Side Technologies</h2>
+        <div class="content--skills__container">
+          <h2 class = "content--skills__heading">Client Side Technologies</h2>
           <p>HTML5</p>
           <p>CSS3</p>
           <p>React.js</p>
@@ -409,8 +303,8 @@
           <p>Figma</p>
           
         </div>
-        <div class="skills__container">
-          <h2 class = "skills__heading">Server Side Technologies<br>Libraries</h2>
+        <div class="content--skills__container">
+          <h2 class = "content--skills__heading">Server Side Technologies<br>Libraries</h2>
         <p>Flask</p>
           <p>Tensorflow</p>
           <p>CV2</p>

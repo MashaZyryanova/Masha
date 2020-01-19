@@ -98,4 +98,11 @@ VIDEO INTRO Styles
     text-align: left;
   }
 }
+
+@media screen and (max-width: 767.98px) {
+  #intro__text {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+}
 /*# sourceMappingURL=intro.css.map */

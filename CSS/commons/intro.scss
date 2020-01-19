@@ -63,7 +63,6 @@ VIDEO INTRO Styles
 }
 
 
-
 .overlay{
     position: absolute;
     top:0;
@@ -98,4 +97,10 @@ VIDEO INTRO Styles
     }
    
    
+}
+@media screen and (max-width:767.98px){
+    #intro__text{
+        font-size:4rem;
+        line-height:5rem;
+    }
 }

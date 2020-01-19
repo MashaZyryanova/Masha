@@ -35,12 +35,15 @@
   color: #f34900;
 }
 
-.button__skills {
+.button__wrapper {
   position: absolute;
   left: 50%;
-  bottom: 20px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  bottom: 40px;
+  -webkit-transform: translateX(-52%);
+          transform: translateX(-52%);
+}
+
+.button__content--skills {
   width: 140px;
   border: none;
   letter-spacing: 2px;
@@ -57,17 +60,17 @@
           animation-fill-mode: forwards;
 }
 
-.button__skills .button__link {
+.button__content--skills .button__link {
   color: white;
   text-decoration: none;
 }
 
-.button__skills:hover {
+.button__content--skills:hover {
   background-color: white;
   border: 2px solid rgba(0, 191, 243, 0.9);
 }
 
-.button__skills:hover .button__link {
+.button__content--skills:hover .button__link {
   color: rgba(0, 191, 243, 0.9);
   text-decoration: none;
 }
@@ -170,5 +173,11 @@
 
 #explore-summerize {
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .explore {
+    font-size: 0.7rem;
+  }
 }
 /*# sourceMappingURL=buttons.css.map */

@@ -1,8 +1,9 @@
 <?php 
 function mz_enqueue(){
    // $uri = get_theme_file_uri();
+   $ver = MZ_DEV_MODE ? time() : false;
    // wp_register_style('mz_main_stylesheet', get_template_directory_uri() . '/CSS/main.css');
-    wp_register_style('main', get_template_directory_uri() . '/CSS/main.css' );
+    wp_register_style('main', get_template_directory_uri() . '/CSS/main.css',[],$ver );
 
     wp_enqueue_style('main');
     wp_register_style('mz-google-fonts','https://fonts.googleapis.com/css?family=Raleway|Raleway+Dots|Roboto+Slab&display=swap');
