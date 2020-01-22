@@ -18,10 +18,7 @@
     color:$body_text;
     color:#404040;
 }
-heading__new--post{
-    font-family: 'Raleway', sans-serif;
-    color:red;
-}
+
 
 .dot{
     margin-left:10px;
@@ -61,7 +58,7 @@ heading__new--post{
     .heading__new{
         font-size:2rem;
         line-height:2.1rem;
-        padding-bottom:0;
+        padding-bottom:0px;
         margin-bottom:18px;
     }
     .subheading{

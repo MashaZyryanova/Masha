@@ -112,7 +112,6 @@
   padding: 25px 30px;
   -webkit-box-shadow: 18px -10px 2px 2px #93d1dfc7;
           box-shadow: 18px -10px 2px 2px #93d1dfc7;
-  z-index: 999;
 }
 
 .content--skills__container p {
@@ -269,14 +268,23 @@
   .project__heading {
     display: none;
   }
+  .content--python {
+    margin-top: 40px;
+  }
   .python__container {
     width: 100%;
   }
+  .content--skills {
+    width: 80%;
+    max-width: none;
+  }
   .content--skills__heading {
     font-size: 1.2rem;
+    line-height: 1.5rem;
+    margin-bottom: 12px;
   }
   .content--skills__container p {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 }
 /*# sourceMappingURL=projects.css.map */

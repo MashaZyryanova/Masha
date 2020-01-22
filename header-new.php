@@ -9,7 +9,7 @@
         <title>Masha Zyryanova</title>    
     </head>
     <body <?php body_class('site'); ?>>
-      <header class="site__header header sticky" >
+      <header id="post__header" class="site__header header sticky" >
         <div class="header_desktop header__content narrow content" >
             <div class="logo header__logo">
               <h1 class = "logo__text">MYZ</h1>

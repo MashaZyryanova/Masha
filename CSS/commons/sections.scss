@@ -17,7 +17,8 @@
     padding:40px 0;
 }
 .skills{
-    padding:100px 0px;
+    padding-top:100px;
+    padding-bottom:0;
 }
 @media screen and (max-width:1450px){
     .python{
@@ -52,7 +53,11 @@
         padding-top:20px;
     }
 }
-
+@media screen and (max-width:767.98px){
+    .python{
+        margin-bottom: 50px;
+    }
+}
 @media (max-width:575.98px){
     .web{
         padding:30px;
