@@ -1,14 +1,14 @@
-@import 'colors.scss';
+// @import 'colors.scss';
 .section__text{
     padding-left:140px;
-    
+    position:relative;
+    z-index:999;
 }
 .section__text--react, .section__text--winners{
     padding-bottom:0;
 }
 .heading__new{
     text-align: left;
-    font-family: 'Raleway', sans-serif;
     font-family: 'Roboto Slab', serif;
     font-size: 6rem;
     line-height: 90px;

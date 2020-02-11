@@ -1,7 +1,7 @@
 .section__text {
   padding-left: 140px;
-  position:relative;
-  z-index:999;
+  position: relative;
+  z-index: 999;
 }
 
 .section__text--react, .section__text--winners {
@@ -10,7 +10,6 @@
 
 .heading__new {
   text-align: left;
-  font-family: 'Raleway', sans-serif;
   font-family: 'Roboto Slab', serif;
   font-size: 6rem;
   line-height: 90px;
@@ -672,7 +671,7 @@ VIDEO INTRO Styles
 
 .content--skills__container p {
   font-family: 'Roboto Slab', serif;
-  font-size: 1rempx;
+  font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   line-height: 1.5rem;
@@ -1005,7 +1004,6 @@ VIDEO INTRO Styles
   letter-spacing: 1.5px;
   text-transform: uppercase;
   font-family: 'Raleway', sans-serif;
-  margin-right: 12px;
 }
 
 .category-link:hover {
@@ -1045,14 +1043,6 @@ VIDEO INTRO Styles
   padding-right: 10px;
   -ms-flex-item-align: end;
       align-self: flex-end;
-}
-
-.category li a {
-  color: rgba(0, 191, 243, 0.9);
-  text-transform: uppercase;
-  font-size: 0.6rem;
-  letter-spacing: 2px;
-  text-decoration: none;
 }
 
 #subheading--posts {
@@ -1409,17 +1399,6 @@ VIDEO INTRO Styles
   }
 }
 
-.hero_video {
-  max-width: 580px;
-  height: auto;
-  margin: 0 auto;
-  border: 5px solid black;
-}
-
-.hero_video > iframe {
-  width: 100%;
-}
-
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1456,17 +1435,10 @@ h1, h2, h3, h4, h5, h6, hr, p {
   padding: 0;
 }
 
-li[id*=menu-item] a {
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-size: 16px;
-  font-family: 'Roboto Slab', serif;
-}
-
 a {
   text-decoration: none !important;
   cursor: pointer;
+  color: white;
 }
 
 a:visited {
@@ -1662,6 +1634,22 @@ Header Styles
   -ms-flex-item-align: end;
       align-self: flex-end;
   margin-bottom: 1px;
+}
+
+.category li a {
+  color: rgba(0, 191, 243, 0.9);
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+li[id*=menu-item] a {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 16px;
+  font-family: 'Roboto Slab', serif;
 }
 
 .menu-item:hover {
@@ -2025,5 +2013,24 @@ i.fab:hover {
 
 .narrow {
   margin: 0 auto;
+}
+
+.hero_video {
+  max-width: 580px;
+  height: auto;
+  margin: 0 auto;
+  border: 5px solid black;
+}
+
+.hero_video > iframe {
+  width: 100%;
+}
+
+.large__image--nopadding {
+  height: 40px;
+}
+
+#liveUrl {
+  color: gray !important;
 }
 /*# sourceMappingURL=main.css.map */
