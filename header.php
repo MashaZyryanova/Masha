@@ -57,24 +57,13 @@
                 ?>
             </nav>     
         </div> 
-        <div class="header_mobile mobile" >  
-          <div class="logo header__logo">
-              <h1 class = "logo__text">MYZ</h1>
-          </div>
-          <div class="mobile__menu">
-              <a class="menu-toggle" onclick="openNav()">
-                <i  class="fas fa-bars fa-2x"></i>
-              </a>
-          </div>
-          <!-- side nav -->
-        </div>
-        <!-- End Mobile Header  -->
+        <?php get_template_part('template-parts/content/menu'); ?>
       </header> 
       <!-- End Header -->
       <div id="sidenav" class="sidenav">
           <a href="javascript:void(0)"
               class="closebtn"
-              onclick="closeNav()">&times;</a>
+              ">&times;</a>
           </a>
           <a href="https://github.com/NRostova" target = "blank" class="menu__link link">
             GITHUB

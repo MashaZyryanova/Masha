@@ -22,7 +22,7 @@
     box-shadow: 2rem 1rem 2rem rgba(0, 0, 0, 0.39);
     transition:0.7s ease-in;
     .project__heading{
-        color:$body_text;
+        color:$bodyText;
         font-size: 24px;
         margin-bottom:20px;
     }
@@ -70,6 +70,8 @@
 }
 
 .content--skills__container{
+    width:30%;
+    padding-bottom:15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -78,16 +80,24 @@
     border: 1px solid $projectBorder;
     border-radius: 20px;
     color: $sky;
-    padding:25px 30px;
     box-shadow: 18px -10px 2px 2px $projectBorder;
-   
     p{
-        font-size: 16px;
+        font-family: 'Roboto Slab', serif;
+        font-size: 1rempx;
         text-transform: uppercase;
         letter-spacing: 2px;
-        line-height:28px;
-        color:$body_text;
+        line-height:1.5rem;
+        color:$bodyText;
     }
+}
+
+.content--skills__heading{
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: center;
+    margin: 20px auto;
+    color:$headingNew;
 }
 .content--skills__container:hover{
     box-shadow: 18px -10px 2px 2px $monochromatic;
@@ -96,13 +106,13 @@
         color:$complimentary;
     }
 }
-.content--skills__heading{
-    font-size: 24px;
-    text-align: center;
-    margin-bottom: 35px;
-    color:black;
-}
 
+
+@media screen and (max-width:1598.98px){
+    .content--skills{
+        padding-bottom:50px;
+    }
+}
 
 @media screen and (max-width:1440px){
     .content{
@@ -114,9 +124,7 @@
     .project__container{
         width:60%;
     }
-    .content--skills{
-        padding-bottom:160px;
-    }
+    
 }
 @media screen and (max-width: 1250px) {
     .content {
@@ -162,12 +170,13 @@
     }
     .content--skills__container{
         width:100%;
-        
         padding:20px 2px;
     }
     .content--skills__heading{
         max-width:80%;
     }
+   
+    
 }
 @media screen and (max-width:1023.98px){
     .project__container{
@@ -212,7 +221,7 @@
 
 @media screen and (max-width:767.98px){
     .content--games{
-        width:98%!important;
+        width:90%!important;
     }
     .project__container{
         width:100%;
@@ -239,4 +248,12 @@
    .content--skills__container p{
        font-size:0.8rem;
    }
+}
+
+@media screen and (max-width:576.98px){
+    .content--web,.content--react,.content--winner_projects,
+    .content--python,
+    .content--skills{
+        width:82%!important;
+    }
 }

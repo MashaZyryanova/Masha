@@ -1,7 +1,7 @@
 @import 'colors.scss';
 .section__text{
     padding-left:140px;
-    // padding-bottom:50px;
+    
 }
 .section__text--react, .section__text--winners{
     padding-bottom:0;
@@ -15,8 +15,7 @@
     font-weight: 800; 
     letter-spacing: 0.05em;
     padding-bottom:40px;
-    color:$body_text;
-    color:#404040;
+    color:$headingNew;
 }
 
 
@@ -36,7 +35,6 @@
 .subheading{
     text-align:left;
     font-size:1.1rem;
-    font-family: 'Roboto Slab', serif;
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
     margin-bottom:20px;
@@ -72,3 +70,8 @@
         margin-left:5px;
     }
 }
+    @media screen and (max-width:575.98px){
+        .section__text{
+            padding-left:30px;
+        }
+    }

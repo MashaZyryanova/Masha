@@ -16,12 +16,14 @@
       <div class="line"></div>
       <p><i class="arrow"></i></p>
     </button>
+    <div class="section2"></div>
     <div class="overlay">
     </div> 
+    
 </section>
 <!-- End Intro -->
 
-<section class="web section__bg--white">
+<section class="web section__bg--white" id="work">
     <div class="section__text">
       <h1 class="heading__new"> Websites<span class="dot dot--blue"></span></h1>
       <h2 class="subheading subheading--blue">E-commerce &nbsp;<span style="color:black">/</span> &nbsp;landing pages</h2>
@@ -76,7 +78,7 @@
       <h1 class="heading__new">React<span class="dot dot--white"></span></h1>
       <h1 class="subheading subheading--white">REACT.js application&nbsp;<span style="color:black">/</span> &nbsp;News Update 2020</h1>
      
-      <a class="explore explore--white " href="#">explore</a>
+      <a class="explore explore--white " href="http://localhost/themeMasha/category/react/">explore</a>
   </div>   
 
   <div class="content--react content" >  
@@ -92,7 +94,8 @@
           <!-- <p class ="project__heading">News Update</p>			 -->
           <div class="project__image">
               <a href="/">
-                <img src="http://localhost/themeMasha/wp-content/uploads/2020/01/2020-01-12.png" class="responsive" width="600" height="auto" alt="News Update"  />
+                <!-- <img src="http://localhost/themeMasha/wp-content/uploads/2020/01/2020-01-12.png" class="responsive" width="600" height="auto" alt="News Update"  /> -->
+                <img src="http://localhost/themeMasha/wp-content/uploads/2020/01/NewsUpdateReact-1.png" class="responsive" width="600" height="auto" alt="News Update"  />
               </a>
           </div>
     </div>     
@@ -109,8 +112,8 @@
   <div class="section__text">
     <h1 class="heading__new">Games<span class="dot dot--blue"></span></h1>
     <h1 class="subheading subheading--blue">SuperPose&nbsp;<span style="color:black">/</span> &nbsp;Russian Doll</h1>
-    <a class="explore explore--dark" id="explore-summerize" href="#">explore summerize</a><br>
-    <a class="explore explore--dark" href="#">explore AImEe</a>
+    <a class="explore explore--dark" id="explore-summerize" href="#">explore SuperPose</a><br>
+    <a class="explore explore--dark" href="#">explore Russian Doll</a>
   </div>
   <div class="content--games content">
     <div class="project" >  
@@ -148,7 +151,7 @@
       <div class="project__container" >
             <p class ="project__heading">Russian Doll</p>			
             <div class="project__image">
-                <a href="https://devpost.com/software/superpose" target="blank">
+                <a href="#" target="blank">
                   <img class="responsive" width="600" height="auto" src="http://localhost/themeMasha/wp-content/uploads/2020/01/2019-12-08-2.png"  alt="gif"  />
               </a>
             </div>
@@ -250,9 +253,11 @@
     <div class="python__container">
       <img src="http://localhost/themeMasha/wp-content/uploads/2020/01/Frame105_HSV_3dplot.png" alt="3d plot HSV Color space">
     </div>
+   
     <div class="python__container">
       <img src="http://localhost/themeMasha/wp-content/uploads/2020/01/Frame105_RGB_3dplot.png" alt="sd plot RGB color space">
     </div>
+    <div id="about"></div>
   </div>
 
 </section>
@@ -279,7 +284,7 @@
 <!-- End About -->
 
 
-<section class="section skills bg_white">
+<section class="section skills bg_white" id="skills">
     
       <div class="content--skills content" >
         <div class="content--skills__container">
@@ -309,7 +314,6 @@
           <p>Tensorflow</p>
           <p>CV2</p>
           <p>NODE.js</p>
-          <p>CLOUD</p>
           <p>MySQL, SQLlite</p>
           <p>Cloud</p>
           <p>AZURE ML</p>

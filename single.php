@@ -1,5 +1,7 @@
 <?php
 get_header('new');
+$hero_large = get_field('hero_large');
+$hero_video = get_field('hero_video');
 $hero_image_1 = get_field('hero_image_1');
 $hero_image_2 = get_field('hero_image_2');
 $process      = get_field('work_process');
@@ -31,74 +33,102 @@ $visit     = get_field('visit');
             </p>
         </div>
     </div>
+
     <div class="wrapper__large__image">
 
-        <?php
-            if(has_post_thumbnail()){
+        <?php if(! empty($hero_large))
 
-            ?>
-            <div class="large__image  ">
-                    <?php the_post_thumbnail('full',array(
-                        'class' =>'shadow'
-                        )); ?>
-            </div>
+            { 
+                ?>
+                <div class="large__image shadow">
+                    <img src="<?php echo $hero_large['url']; ?>" alt="hero large">
+                </div>
+
             <?php
+            }
+            
+
+             elseif (!empty($hero_video))
+            {
+            ?>
+                <div class="hero__video shadow">
+                    <?php echo $hero_video; ?>
+                </div>
+
+            
+            <?php
+                }
+            else{
 
             }
-            ?>  
-
+            ?>
+            
     </div>  
-       
-    <div class="color-wrapper">
-        <div class="wrapper__top"></div>
-        <div class="wrapper__main">
-            <div class="hero__image shadow">
-                <img src="<?php echo $hero_image_1['url']; ?>" alt="hero image 1">
-            </div>
-            <div class="hero__image shadow">
-                <img src="<?php echo $hero_image_2['url']; ?>" alt="hero image 2">
-            </div>
+
+
+    <?php 
+    if(! empty($hero_image_1))
+
+        { 
+        ?> 
+
+        <div class="color-wrapper">
+            <div class="wrapper__top"></div>
+            <div class="wrapper__main">
+          
+                   <div class="hero__image shadow">
+                        <img src="<?php echo $hero_image_1['url']; ?>" alt="hero image 1">
+                    </div>
+                <?php
+                }
+            ?>
+
+            <?php if(! empty($hero_image_2))
+                { 
+                ?>
+                    <div class="hero__image shadow">
+                        <img src="<?php echo $hero_image_2['url']; ?>" alt="hero image 2">
+                    </div>
+                <?php
+                }
+                ?>
         </div>
     </div>
 
     <div class="content__overview">
+    
         <div class="overview">
-            <h5>Overview</h5>
-            <p><?php echo $process; ?></p>
+            <h3 class="subheading" id="subheading__overview">Overview</h3>
+            <p id="overview__text"><?php echo $process; ?></p>
         </div>
         <div class="content__meta">
-            <h5>Scope</h5>
-            <p><?php echo $scope; ?></p>
-            <h5>Technologies</h5>
-            <p><?php echo $tech; ?></p>
-            <h5>Visit Website</h5>
-            <p><?php echo $visit; ?></p>
+            <h5 class="subheading" id="subheading--post">Scope</h5>
+            <p class="content__meta__text"><?php echo $scope; ?></p>
+            <h5 class="subheading" id="subheading--post">Technologies</h5>
+            <p class="content__meta__text"><?php echo $tech; ?></p>
+
+            <?php 
+            if(! empty($visit))
+
+            { 
+                ?>
+            <h5 class="subheading" id="subheading--post">Visit Website</h5>
+            <p class="content__meta__text"><?php echo $visit; ?></p>
+
+            <?php
+                }
+                ?>
+
         </div>
 
     </div>
 
-
+    <div style="margin-bottom:40px;margin-top:50px;">
+        <h5 style="text-align:center;">
+            <a class="explore explore--dark" style="font-weight:700;" href="http://localhost/themeMasha/websites/">Back to portfolio</a></h5>
+    </div>
 
 
 </div>
-<div class="footer--post">
-    <div class="contact--post"> 
-          
-          
-          
-          <a href="mailto:mzyrianova14@gmail.com">
-            <h1 class = "email--post">mzyrianova14@gmail.com</h1>
-          </a>
-          <h1 class = "phone--post">917.576.7664</h1>
-          <div class="social">
-            <a href="https://www.linkedin.com/in/maria-zyrianova-40465943/" target = "blank">
-              <i class="fab fa-linkedin fa-2x"></i>
-            </a>
-            <a href="https://github.com/NRostova" target = "blank" class="menu__link link">
-              <i class="fab fa-github fa-2x" ></i>
-            </a>
-          
-          </div>
-        
-    </div> 
-</div>
+
+<?php get_footer('simple'); ?>
