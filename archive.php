@@ -18,24 +18,4 @@
     
 </div>
 <!-- Posts
-=============================================== -->
-<div id="posts">
-<!-- Get custom post types  -->
-	
-
-
-    <?php
-	   
-	
-        if(have_posts()){
-            while(have_posts()) {
-                the_post();
-                
-                get_template_part('template-parts/post/content-excerpt');
-            }
-        }
-    ?>
-</div> 
-<!-- End posts -->
-
 <?php get_footer('simple'); ?>

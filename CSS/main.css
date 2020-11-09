@@ -1,7 +1,12 @@
 .section__text {
   padding-left: 140px;
+<<<<<<< HEAD
 	position:relative;
 	z-index:999;
+=======
+  position: relative;
+  z-index: 999;
+>>>>>>> bf06b6133771acca41e360055c224e43a41121e5
 }
 
 .section__text--react, .section__text--winners {
@@ -10,7 +15,6 @@
 
 .heading__new {
   text-align: left;
-  font-family: 'Raleway', sans-serif;
   font-family: 'Roboto Slab', serif;
   font-size: 6rem;
   font-size: 5rem;
@@ -203,10 +207,14 @@ VIDEO INTRO Styles
     line-height: 4rem;
   }
 }
+<<<<<<< HEAD
 .web, .games, .python,  {
 	max-width: 1600px;
   	margin: auto;
 }
+=======
+
+>>>>>>> bf06b6133771acca41e360055c224e43a41121e5
 .web {
   
   margin-top: 150px;
@@ -725,10 +733,14 @@ VIDEO INTRO Styles
   color: #f34900;
 }
 
+<<<<<<< HEAD
 @media screen and (max-width: 1870.98px) {
 	 .content {
     max-width: 1220px;
   }
+=======
+@media screen and (max-width: 1598.98px) {
+>>>>>>> bf06b6133771acca41e360055c224e43a41121e5
   .content--skills {
     padding-bottom: 50px;
   }
@@ -1084,6 +1096,7 @@ VIDEO INTRO Styles
       align-self: flex-end;
 }
 
+<<<<<<< HEAD
 .category>li a {
   color: rgba(0, 191, 243, 0.9);
   text-transform: uppercase;
@@ -1092,6 +1105,8 @@ VIDEO INTRO Styles
   text-decoration: none;
 }
 
+=======
+>>>>>>> bf06b6133771acca41e360055c224e43a41121e5
 #subheading--posts {
   color: #4b4b4b;
   font-weight: bold;
@@ -1683,6 +1698,7 @@ Header Styles
   margin-bottom: 1px;
 }
 
+<<<<<<< HEAD
 
 .category li a {
     color: rgba(0, 191, 243, 0.9);
@@ -1698,6 +1714,22 @@ li[id*=menu-item] a{
   	font-size: 16px;
  
   	font-family: 'Roboto Slab', serif;
+=======
+.category li a {
+  color: rgba(0, 191, 243, 0.9);
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+li[id*=menu-item] a {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 16px;
+  font-family: 'Roboto Slab', serif;
+>>>>>>> bf06b6133771acca41e360055c224e43a41121e5
 }
 
 .menu-item:hover {
@@ -2064,6 +2096,7 @@ i.fab:hover {
 }
 
 .hero_video {
+<<<<<<< HEAD
 	max-width:580px;
 	height: auto;
 	margin: 0 auto;
@@ -2151,5 +2184,23 @@ form {
 .about__wrapper {
 	border: 1px dotted white;
 	padding: 12px 0px;
+=======
+  max-width: 580px;
+  height: auto;
+  margin: 0 auto;
+  border: 5px solid black;
+}
+
+.hero_video > iframe {
+  width: 100%;
+}
+
+.large__image--nopadding {
+  height: 40px;
+}
+
+#liveUrl {
+  color: gray !important;
+>>>>>>> bf06b6133771acca41e360055c224e43a41121e5
 }
 /*# sourceMappingURL=main.css.map */
