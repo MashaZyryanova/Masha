@@ -76,6 +76,8 @@
 // scroll to projects button
 .scroll-to-projects{
     border:2px solid $sky;
+    border: 2px solid white;
+
     background:rgba(16, 193, 242, 0.16);
     height:55px;
     width:55px;
@@ -94,6 +96,7 @@
     bottom:15px;
     left:15px;
     border: solid #00bff3;
+    border: solid white;
     border-width: 0 3px 3px 0;
     padding:10px;
     display:inline-block;
@@ -107,7 +110,7 @@
 }
 
 .explore--dark{
-    color:$body_text;
+    color:$bodyText;
 }
 .explore::before{
     content:" ";
@@ -121,7 +124,7 @@
     transition:0.2s ease-in;
 }
 .explore--white::before{
-    background:$body_text;
+    background:$bodyText;
 }
 
 .explore:hover::before{
@@ -134,7 +137,7 @@
     text-decoration: none;
 }
 .explore--white:hover{
-    color:$body_text;
+    color:$bodyText;
 }
 #explore-summerize{
     margin-bottom:20px;

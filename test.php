@@ -117,3 +117,43 @@ else{
               </a>
             </button>  -->
       </div>
+
+      footer scripts
+      <script>
+      //open close side nav
+//         function openNav(){
+//             document.getElementById("sidenav").style.width="450px";
+//             //add class nav-open to body
+//             document.body.classList.add('navopen');
+//         }
+//         function closeNav(){
+//             document.getElementById("sidenav").style.width = "0";
+//             document.body.classList.remove('navopen');
+//         }
+//         document.addEventListener('DOMContentLoaded',function(){
+//             var button = document.querySelector('.scroll-to-projects');
+//             button.addEventListener('click', function(){
+//                 document.querySelector('.web').scrollIntoView({ 
+//                 behavior: 'smooth' 
+                
+//               });
+        
+//     });
+   
+// });
+    </script>
+
+
+<?php
+            if(has_post_thumbnail()){
+
+            ?>
+            <div class="large__image  ">
+                    <?php the_post_thumbnail('full',array(
+                        'class' =>'shadow'
+                        )); ?>
+            </div>
+            <?php
+
+            }
+            ?>  

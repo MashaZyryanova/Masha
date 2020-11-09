@@ -5,7 +5,7 @@
 =========================================================== -->
 <section class="intro"> 
     <video  id="intro__video" autoplay loop muted >
-      <source src="http://localhost/themeMasha/wp-content/uploads/2020/01/BG_FULL_MOVIE.mov">
+      <source src="/wp-content/themes/PersonalWebsiteWordpress/assets/fonts/images/BG_FULL_MOVIE.mov">
     </video>
     <div class="intro__col">
       <p >Hello. I am a full stack developer living
@@ -16,55 +16,45 @@
       <div class="line"></div>
       <p><i class="arrow"></i></p>
     </button>
+    <div class="section2"></div>
     <div class="overlay">
     </div> 
+    
 </section>
 <!-- End Intro -->
 
-<section class="web section__bg--white">
+<section class="web section__bg--white" id="work">
     <div class="section__text">
       <h1 class="heading__new"> Websites<span class="dot dot--blue"></span></h1>
       <h2 class="subheading subheading--blue">E-commerce &nbsp;<span style="color:black">/</span> &nbsp;landing pages</h2>
-      <a class="explore explore--dark" href="http://localhost/themeMasha/websites/">more work</a>
+      <a class="explore explore--dark" href="/portfolio-new/">more work</a>
     </div>
     <div class="content--web">
-      <div class="project--web project--web__one" >  
-         
-                <div class="project__image">
-                    <a href="/">
-                      <img class="responsive" width="600px;" height="auto" src="http://localhost/themeMasha/wp-content/uploads/2020/01/GTF.png"  alt="Vivid Fashion"  />
-                  </a>
+      <div class="project--web project--web__two" >  
+               <div class="project__image">
+                    <a href="/vivid-fashion/">
+						 <img class="responsive" width="600px;" height="auto" src="/wp-content/uploads/2020/06/vividFashion.png"  alt="Vivid Fashion"/>
+						
+					</a>
                 </div>
-        
-          <!-- <div class="mobile_landing_page">
-              <img class="responsive__mobile responsive" width="180px; height="400px" src="./images/fp.png" alt="flowers">
-          </div>  -->
-      </div>
-      <div class=" project--web project--web__two" >  
-          
-                <!-- <p class ="project__heading">Vivid Fashion</p>			 -->
-                <div class="project__image">
-                    <a href="/">
-                      <img class="responsive" width="600px;" height="auto" src="http://localhost/themeMasha/wp-content/uploads/2020/01/vividFashion.png"  alt="Vivid Fashion"  />
-                  </a>
-                </div>
-          
-          <!-- <div class="mobile_landing_page">
-              <img class="responsive__mobile responsive" width="180px; height="auto" src="./images/fp.png" alt="flowers">
-          </div>  -->
       </div>
       <div class=" project--web project--web__three" >  
           
-                <!-- <p class ="project__heading">Vivid Fashion</p>			 -->
                 <div class="project__image">
-                    <a href="/">
-                      <img class="responsive" width="600px;" height="auto" src="http://localhost/themeMasha/wp-content/uploads/2020/01/2020-01-10.png"  alt="Vivid Fashion"  />
+                    <a href="/web2/">
+						<img class="responsive" width="600px;" height="auto" src="/wp-content/uploads/2020/06/Component-1.png"  alt="Map"/>
+                      
                   </a>
                 </div>
-         
-          <!-- <div class="mobile_landing_page">
-              <img class="responsive__mobile responsive" width="180px; height="auto" src="./images/fp.png" alt="flowers">
-          </div>  -->
+          
+        
+      </div>
+      <div class=" project--web project--web__one" >  	
+           <div class="project__image">
+                 <a href="/web1/">
+					<img class="responsive" width="600px;" height="auto" src="/wp-content/uploads/2020/06/Charity_home.png"  alt="Charity"/>
+                 </a>
+           </div>
       </div>
     </div>   
 </section>
@@ -76,23 +66,23 @@
       <h1 class="heading__new">React<span class="dot dot--white"></span></h1>
       <h1 class="subheading subheading--white">REACT.js application&nbsp;<span style="color:black">/</span> &nbsp;News Update 2020</h1>
      
-      <a class="explore explore--white " href="#">explore</a>
+      <a class="explore explore--white " href="/category/react/">explore</a>
   </div>   
 
   <div class="content--react content" >  
     <div class="react__container" id="react-1" >
-          <!-- <p class ="project__heading">News Update</p>			 -->
+         
           <div class="project__image">
-              <a href="/">
-                <img src="http://localhost/themeMasha/wp-content/uploads/2020/01/2020-01-12.png" class="responsive" width="600" height="auto" alt="News Update"  />
+              <a href="/category/react/">
+                <img src="/wp-content/uploads/2020/06/2020-01-12-1.png" class="responsive" width="600" height="auto" alt="News Update"  />
               </a>
           </div>
     </div>      
     <div class="react__container" id="react-2">
-          <!-- <p class ="project__heading">News Update</p>			 -->
+        
           <div class="project__image">
-              <a href="/">
-                <img src="http://localhost/themeMasha/wp-content/uploads/2020/01/2020-01-12.png" class="responsive" width="600" height="auto" alt="News Update"  />
+              <a href="/category/react/">
+                <img src="/wp-content/uploads/2020/06/2020-01-12.png" class="responsive" width="600" height="auto" alt="News Update"  />
               </a>
           </div>
     </div>     
@@ -108,17 +98,17 @@
 <section class="section games section__bg--white">
   <div class="section__text">
     <h1 class="heading__new">Games<span class="dot dot--blue"></span></h1>
-    <h1 class="subheading subheading--blue">SuperPose&nbsp;<span style="color:black">/</span> &nbsp;Russian Doll</h1>
-    <a class="explore explore--dark" id="explore-summerize" href="#">explore summerize</a><br>
-    <a class="explore explore--dark" href="#">explore AImEe</a>
+    <h1 class="subheading subheading--blue">SuperPose&nbsp;<span style="color:black">/</span> &nbsp;Puzzles</h1>
+    <a class="explore explore--dark" id="explore-summerize" href="/superpose">explore SuperPose</a><br>
+    <a class="explore explore--dark" href="https://nrostova.github.io/puzzle/" target="_blank">explore Puzzles</a>
   </div>
   <div class="content--games content">
     <div class="project" >  
       <div class="project__container" >
-            <p class ="project__heading">SuperPose Caltech Hacktech 2019</p>			
+            <p class ="project__heading">SuperPose Caltech Hacktech</p>			
             <div class="project__image">
                 <a href="https://devpost.com/software/superpose" target="blank">
-                  <img class="responsive" width="600" height="auto" src="http://localhost/themeMasha/wp-content/uploads/2020/01/superpose.gif"  alt="gif"  />
+                  <img class="responsive" width="600" height="auto" src="/wp-content/uploads/2020/06/superpose-1.gif"  alt="Superpose gif"  />
               </a>
             </div>
       </div>
@@ -144,12 +134,12 @@
      
     </div>
     <!-- End Project 4 SuperPose-->
-    <div class="project" id="rd" >  
+    <div class="project" id="rd" style="margin-top:50px;">  
       <div class="project__container" >
-            <p class ="project__heading">Russian Doll</p>			
+            <p class ="project__heading">Online Puzzles</p>			
             <div class="project__image">
-                <a href="https://devpost.com/software/superpose" target="blank">
-                  <img class="responsive" width="600" height="auto" src="http://localhost/themeMasha/wp-content/uploads/2020/01/2019-12-08-2.png"  alt="gif"  />
+                <a href="/latest-work/" target="blank">
+                  <img class="responsive" width="600" height="auto" src="/wp-content/uploads/2020/06/PuzzleImage.jpg"  alt="Car puzzle"  />
               </a>
             </div>
       </div>
@@ -159,14 +149,14 @@
           <p class="built__with">built with <p>
           <p class="project__text">Javascript <p>
           <p class="project__text">Firebase API<p>
-          <p class="project__text">CSS grid<p>
+          <p class="project__text">Canvas<p>
         
         </div> 
        
         <div class="button__wrapper">
           <button class="button__content--skills button">
-            <a class ="button__link" href="https://devpost.com/software/superpose" target="blank">
-            explore <br>Russian Doll
+            <a class ="button__link" href="https://nrostova.github.io/puzzle/" target="blank">
+            explore <br>Puzzle Game
             </a>
             
           </button> 
@@ -175,7 +165,7 @@
       
         
     </div>
-    <!-- End Project 5 RussianDoll -->
+    <!-- End Project 5 Puzzles -->
   </div>
 </section>
 <!-- End Games Sections -->
@@ -183,10 +173,10 @@
 
 <section class="section winners section__bg--blue">
   <div class="section__text section__text--winners">
-    <h1 class="heading__new">Winners<span class="dot dot--white"></span></h1>
+    <h1 class="heading__new">Awards<span class="dot dot--white"></span></h1>
     <h2 class="subheading subheading--white">Hackathons&nbsp;<span style="color:black">/</span> &nbsp;competitions</h2>
-    <a class="explore explore--white" id="explore-summerize" href="#">explore summerize</a><br>
-    <a class="explore explore--white" href="#">explore AImEe</a>
+    <a class="explore explore--white" id="explore-summerize" href="/summerize/">explore summerize</a><br>
+    <a class="explore explore--white" href="/aiimee/">explore AImEe</a>
   </div>
     
   <div class="content--winner__projects content">
@@ -195,27 +185,11 @@
             <p class ="project__heading">AImEe. Winner at FireDrone.AI 2019</p>
             <div class="project__image">
               <a href="https://devpost.com/software/aimmi" target="blank">
-                <img class="responsive" width="600" height="auto" src="http://localhost/themeMasha/wp-content/uploads/2020/01/AImEe.gif"  alt="AImEe gif"  />
+                <img class="responsive" width="600" height="auto" src="/wp-content/uploads/2020/06/Aimee_home.png"  alt="AImEe home"  />
               </a>
             </div>
         </div>
-        <!-- <div class="project__description">
-          <div class="remote">
-            <p class="project__text">built with <p>
-            <p class="project__text">Python<p>
-            <p class="project__text">Flask<p>
-            <p class="project__text">azure ml<p>
-            <p class="project__text">TensorFlow<p>
-            <p class="project__text">model used:<p>
-            <p class="project__text">inception V3<p>
-          </div> 
-          
-          <button class="button__content--skills button">
-            <a class ="button__link" href="https://devpost.com/software/aimmi" target="blank">
-              more about AImEe
-            </a> 
-          </button> 
-        </div> -->
+  
       
         <!-- End Project 2 Firedrone--> 
     
@@ -223,7 +197,7 @@
       <p class ="project__heading">Summerize Winner at MLH Local Hack Day 2018</p>		
       <div class="image__container">
         <a href="https://devpost.com/software/Summerize" target="blank">
-          <img class="responsive" width="600" height="auto" src="http://localhost/themeMasha/wp-content/uploads/2020/01/Summerize.gif"  alt="gif"  />
+          <img class="responsive" width="600" height="auto" src="/wp-content/uploads/2020/06/Summerize.gif"  alt="gif"  />
         </a>
       </div> 
     </div>
@@ -242,17 +216,19 @@
 
   <div class="section__text">
         <h1 class="heading__new"> Python<span class="dot dot--blue"></span></h1>
-        <h2 class="subheading subheading--blue">Research&nbsp;<span style="color:black">/</span> &nbsp;Visualizations&nbsp;<span style="color:black">/</span>DYNAMICS OF VORTEX RINGS</h2>
-        <a class="explore explore--dark" href="#">explore</a>
+        <h2 class="subheading subheading--blue">Research&nbsp;<span style="color:black">/</span> &nbsp;Visualizations&nbsp;<span style="color:black">/</span>&nbsp;DYNAMICS OF VORTEX RINGS</h2>
+        <a class="explore explore--dark" href="/category/python/">explore</a>
   </div>
 
   <div class="content--python">
     <div class="python__container">
-      <img src="http://localhost/themeMasha/wp-content/uploads/2020/01/Frame105_HSV_3dplot.png" alt="3d plot HSV Color space">
+      <img src="/wp-content/uploads/2020/06/Frame105_HSV_3dplot-1.png" alt="3d plot HSV Color space">
     </div>
+   
     <div class="python__container">
-      <img src="http://localhost/themeMasha/wp-content/uploads/2020/01/Frame105_RGB_3dplot.png" alt="sd plot RGB color space">
+      <img src="wp-content/uploads/2020/06/Frame105_RGB_3dplot.png" alt="sd plot RGB color space">
     </div>
+    <div id="about"></div>
   </div>
 
 </section>
@@ -260,26 +236,23 @@
 
 
 <section class="bio section__bg--blue" >
-    <div class="about" id="about">
-      <div class="ellipse"></div>
-      <p class="about__text">Hello! My name is <span class="yellow">Masha</span>. I am a <span class="yellow">full stack developer</span> living
-        in Los Angeles. My biggest inspiration is nature. Whether I am looking for a prefect color scheme to design a website,
-        or imagining an engineering device, I often discover solutions by looking at the world around me.
-        In terms of coding, I strive to write a clean modular reusable code.
-         One of my favorite things is to participate and compete in hackathons. I love working 
-        in a team environment while building something awesome on a tight deadline.
-      </p>
-      <!-- <a  
-        href="/images/Masha_Zyryanova_Web_Developer.pdf" 
-        download="Masha_Zyryanova_resume">
-        <button class="about__button" >Download resume</button>
-      </a> -->
+	<div class="about__wrapper" >
+		<div class="about" id="about">
+		  <div class="ellipse"></div>
+		  <p class="about__text">Hello! My name is <span class="yellow">Masha</span>. I am a <span class="yellow">full stack developer</span> living
+			in Los Angeles. My biggest inspiration is nature. Whether I am looking for a prefect color scheme to design a website,
+			or imagining an engineering device, I often discover solutions by looking at the world around me.
+			In terms of coding, I strive to write a clean modular reusable code.
+			 One of my favorite things is to participate and compete in hackathons. I love working 
+			in a team environment while building something awesome on a tight deadline.
+		  </p>
+		</div>
     </div>
 </section> 
 <!-- End About -->
 
 
-<section class="section skills bg_white">
+<section class="section skills bg_white" id="skills">
     
       <div class="content--skills content" >
         <div class="content--skills__container">
@@ -290,16 +263,16 @@
           <p>JavaScript</p>
           <p>PHP</p>
           <p>R</p>
-          <p>GIT VCS</p>
+          <p>GIT, GITLAB VCS</p>
         </div>
         <div class="content--skills__container">
           <h2 class = "content--skills__heading">Client Side Technologies</h2>
           <p>HTML5</p>
           <p>CSS3</p>
-          <p>React.js</p>
-          <p>Redux</p>
-          <p>SASS</p>
-          <p>jinja templating language</p>
+          <p>React.js, Redux</p>
+		  <p>SASS</p>
+          <p>Nunjucks</p>
+           <p>Jinja</p>
           <p>Figma</p>
           
         </div>
@@ -308,8 +281,7 @@
         <p>Flask</p>
           <p>Tensorflow</p>
           <p>CV2</p>
-          <p>NODE.js</p>
-          <p>CLOUD</p>
+          <p>NODE.js, Express</p>
           <p>MySQL, SQLlite</p>
           <p>Cloud</p>
           <p>AZURE ML</p>
