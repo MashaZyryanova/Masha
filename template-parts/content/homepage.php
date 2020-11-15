@@ -17,9 +17,7 @@
       <p><i class="arrow"></i></p>
     </button>
     <div class="section2"></div>
-    <div class="overlay">
-    </div> 
-    
+    <div class="overlay"></div>  
 </section>
 <!-- End Intro -->
 

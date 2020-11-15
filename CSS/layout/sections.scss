@@ -1,0 +1,45 @@
+.section__bg--white{
+    background-color:white;
+}
+.section__bg--blue{
+    background-color: $bgBlue;
+    background-color:$bgLight;
+}
+.waive--blue{
+    background-color:white;
+    margin-top:-200px;
+}
+.waive--white{
+    background-color:$bgLight;
+    margin-top:-300px;
+}
+.waive--python{
+    margin-top:-350px;
+}
+.waive--white__react{
+    margin-top:-300px;
+}
+
+@media screen and (max-width:1249.98px){
+    .waive--white__react{
+        margin-top:-220px;
+    }
+    .waive--python{
+        margin-top:-160px;
+    }
+}
+@media screen and (max-width:1023.98px){
+    .waive--white__react{
+        position:relative;
+        z-index:0;
+    }
+    
+}
+.waive--games{
+    margin-top:-100px;
+}
+
+
+.react__description--mobile{
+    display:none;
+}

@@ -1,0 +1,57 @@
+/*
+==============================================
+About Styles
+==============================================
+*/
+.about{
+    overflow: hidden;
+    margin-left:300px;
+    max-width: 1180px; 
+}
+.about__text{
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    letter-spacing: 3px;
+    color:white;
+    line-height: 1.4em;
+    max-width:600px;
+}
+.ellipse{
+  shape-outside: ellipse(100px 200px at 50% 50%);
+  width: 350px;
+  height: 400px;
+  float: left;
+  opacity: .2;
+}
+
+@media screen and (max-width: 1201px){
+    .about{
+        margin:auto;  
+    } 
+    .ellipse{
+        display:none;
+    }
+    .about__text{
+        width:80%;
+        margin:0 auto;
+    }
+    .about__button{
+        margin:40px auto;
+    }
+}
+@media screen and (max-width:767.98px){
+    .about__text{
+        font-size:0.8rem;
+        line-height:1.1rem;
+    }
+}
+@media screen and(max-width:576.98px){
+    .about{
+        width:97%;
+        padding:40px;
+    }
+}
+waive>svg{
+    display:block;
+    overflow: hidden;
+}

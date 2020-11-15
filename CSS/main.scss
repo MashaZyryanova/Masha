@@ -14,57 +14,15 @@
 @import 'components/react';
 @import 'components/post';
 
+@import 'layout/new';
+@import 'layout/sections';
+@import 'layout/aboutSection';
 
 
-.section__bg--white{
-    background-color:white;
-}
-.section__bg--blue{
-    background-color: $bgBlue;
-    background-color:$bgLight;
-}
-.waive--blue{
-    background-color:white;
-    margin-top:-200px;
-}
-.waive--white{
-    background-color:$bgLight;
-    margin-top:-300px;
-}
-.waive--python{
-    margin-top:-350px;
-}
-.waive--white__react{
-    margin-top:-300px;
-}
-@media screen and (max-width:1249.98px){
-    .waive--white__react{
-        margin-top:-220px;
-    }
-    .waive--python{
-        margin-top:-160px;
-    }
-}
-@media screen and (max-width:1023.98px){
-    .waive--white__react{
-        position:relative;
-        z-index:0;
-    }
-    
-}
-.waive--games{
-    margin-top:-100px;
-}
-*:focus {outline:none !important}
-
-.react__description--mobile{
-    display:none;
-}
 
 
-.shadow{
-    box-shadow: 2rem 1rem 2rem rgba(0,0,0,.15);
-}
+
+
 
 
 
@@ -109,63 +67,7 @@
  text-align:center;
 }
 
-/*
-==============================================
-About Styles
-==============================================
-*/
-.about{
-    overflow: hidden;
-    margin-left:300px;
-    max-width: 1180px; 
-}
-.about__text{
-    font-family: 'Roboto Slab', serif;
-    font-size: 16px;
-    letter-spacing: 3px;
-    color:white;
-    line-height: 1.4em;
-    max-width:600px;
-}
-.ellipse{
-  shape-outside: ellipse(100px 200px at 50% 50%);
-  width: 350px;
-  height: 400px;
-  float: left;
-  opacity: .2;
-}
 
-@media screen and (max-width: 1201px){
-    .about{
-        margin:auto;  
-    } 
-    .ellipse{
-        display:none;
-    }
-    .about__text{
-        width:80%;
-        margin:0 auto;
-    }
-    .about__button{
-        margin:40px auto;
-    }
-}
-@media screen and (max-width:767.98px){
-    .about__text{
-        font-size:0.8rem;
-        line-height:1.1rem;
-    }
-}
-@media screen and(max-width:576.98px){
-    .about{
-        width:97%;
-        padding:40px;
-    }
-}
-waive>svg{
-    display:block;
-    overflow: hidden;
-}
 /******************************************************
 *          footer Styles
 ******************************************************/
