@@ -1,0 +1,36 @@
+/*
+==============================================
+Overall styles
+==============================================
+*/
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  [class*="accent"] {
+    color: $sky;
+  }
+  [class*="align-right"] {
+    text-align: right;
+  }
+  [class*="align-left"] {
+    text-align: left;
+  }
+  [class*="align-center"] {
+    text-align: center;
+  }
+hr {
+    border:none;
+}
+
+.content{
+    max-width: 1300px;
+    
+}
+@media screen and (max-width: 1250px) {
+    .content {
+      max-width: 1000px;
+    }
+}
+  
