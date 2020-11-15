@@ -99,6 +99,7 @@
 
 .scroll-to-projects {
   border: 2px solid rgba(0, 191, 243, 0.9);
+  border: 2px solid white;
   background: rgba(16, 193, 242, 0.16);
   height: 55px;
   width: 55px;
@@ -119,6 +120,7 @@
   bottom: 15px;
   left: 15px;
   border: solid #00bff3;
+  border: solid white;
   border-width: 0 3px 3px 0;
   padding: 10px;
   display: inline-block;

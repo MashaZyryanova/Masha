@@ -75,14 +75,19 @@ VIDEO INTRO Styles
   z-index: 100;
 }
 
+@media screen and (max-width: 1200.98px) {
+  #intro__text {
+    width: 70%;
+    top: 20%;
+    font-size: 6rem;
+    line-height: 6.5rem;
+    text-align: left;
+  }
+}
+
 @media screen and (max-width: 1023.98px) {
   .intro__col {
     width: 45%;
-  }
-  #intro__text {
-    top: 20%;
-    text-align: left;
-    width: 80%;
   }
 }
 
@@ -103,6 +108,14 @@ VIDEO INTRO Styles
   #intro__text {
     font-size: 4rem;
     line-height: 5rem;
+  }
+}
+
+@media screen and (max-width: 424.98px) {
+  #intro__text {
+    max-width: 300px;
+    font-size: 3rem;
+    line-height: 4rem;
   }
 }
 /*# sourceMappingURL=intro.css.map */

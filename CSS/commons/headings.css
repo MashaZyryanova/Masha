@@ -15,7 +15,6 @@
   font-weight: 800;
   letter-spacing: 0.05em;
   padding-bottom: 40px;
-  color: #4b4b4b;
   color: #404040;
 }
 
@@ -38,7 +37,6 @@
 .subheading {
   text-align: left;
   font-size: 1.1rem;
-  font-family: 'Roboto Slab', serif;
   font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -73,6 +71,12 @@
     height: 7px;
     width: 7px;
     margin-left: 5px;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  .section__text {
+    padding-left: 30px;
   }
 }
 /*# sourceMappingURL=headings.css.map */
