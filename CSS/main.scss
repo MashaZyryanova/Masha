@@ -1,8 +1,10 @@
-@import 'base/reset.scss';
-@import 'base/base.scss';
-
 @import 'components/colors';
-@import 'components/header';
+@import 'base/reset';
+@import 'base/base';
+
+
+
+@import 'layout/header';
 @import 'components/headings';
 @import 'components/intro';
 @import 'components/sections';
