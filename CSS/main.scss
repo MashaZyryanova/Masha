@@ -1,30 +1,14 @@
-@import 'commons/colors';
-@import 'commons/headings';
-@import 'commons/intro';
-@import 'commons/sections';
-@import 'commons/buttons';
-@import 'commons/webs';
-@import 'commons/projects';
-@import 'commons/react';
-@import 'commons/post';
+@import 'components/colors';
+@import 'components/headings';
+@import 'components/intro';
+@import 'components/sections';
+@import 'components/buttons';
+@import 'components/webs';
+@import 'components/projects';
+@import 'components/react';
+@import 'components/post';
 
-*{
-    box-sizing: border-box;
-}
-body{
-    line-height: 1.42857em;
-    font-weight: 300;
-    font-size: 15px;
-    letter-spacing: 1px;
-    margin:0;
-    padding:0;
-    overflow-x: hidden; 
-    font-family: 'Roboto Slab', serif;
-}
-html{
-    width:100%;
-    height:100%;
-    font-size:100%; }
+
 ul{
     padding:0;
     margin:0;
