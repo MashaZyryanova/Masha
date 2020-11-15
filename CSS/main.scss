@@ -1,11 +1,12 @@
-@import 'commons/headings.scss';
-@import 'commons/intro.scss';
-@import 'commons/sections.scss';
-@import 'commons/buttons.scss';
-@import 'commons/webs.scss';
-@import 'commons/projects.scss';
-@import 'commons/react.scss';
-@import 'commons/post.scss';
+@import 'commons/colors';
+@import 'commons/headings';
+@import 'commons/intro';
+@import 'commons/sections';
+@import 'commons/buttons';
+@import 'commons/webs';
+@import 'commons/projects';
+@import 'commons/react';
+@import 'commons/post';
 
 *{
     box-sizing: border-box;
@@ -36,10 +37,17 @@ h1,h2,h3,h4,h5,h6,hr,p{
   padding: 0;
 }
 
+
 a{
     text-decoration: none!important;
     cursor:pointer;
-    color: white;
+   color:white;
+}
+a:visited{
+    text-decoration:none;
+}
+a:visited{
+    text-decoration:none;
 }
 a:visited{
     text-decoration:none;
@@ -194,16 +202,23 @@ Header Styles
     height: 62%;
     align-self: flex-end; 
     margin-bottom: 1px;
-    a{
-        text-transform: uppercase;
-        letter-spacing: 3px;
-        font-size: 16px;
-        color: white; 
-        font-family: 'Roboto Slab', serif;
-        
-    }
+  
 }
 
+.category li a{
+    color:$sky;
+    text-transform: uppercase;
+    font-size:0.6rem;
+    letter-spacing:2px;
+    text-decoration:none;
+}
+li[id*=menu-item] a{
+    color:white;
+	 text-transform: uppercase;
+ 	 letter-spacing: 3px;
+  	    font-size: 16px;
+  	font-family: 'Roboto Slab', serif;
+}
 .menu-item:hover{
     border-bottom: 5px solid white;
     transition: 0.2s ease;
@@ -506,4 +521,20 @@ i.fab:hover{
 
 .narrow{
     margin:0 auto;
+}
+
+.hero_video{
+    max-width:580px;
+    height:auto;
+    margin:0 auto;
+    border:5px solid black;
+}
+.hero_video >iframe{
+    width:100%;
+}
+.large__image--nopadding{
+    height:40px;
+}
+#liveUrl{
+    color:gray!important;
 }

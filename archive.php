@@ -17,16 +17,10 @@
     </h3>
     
 </div>
-<!-- Posts
-=============================================== -->
+<!-- Posts -->
 <div id="posts">
 <!-- Get custom post types  -->
-	
-
-
     <?php
-	   
-	
         if(have_posts()){
             while(have_posts()) {
                 the_post();
