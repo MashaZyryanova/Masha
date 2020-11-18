@@ -3,7 +3,7 @@
  'abstracts/variables',
  'abstracts/functions',
  'abstracts/mixins';
- 
+
 @import 'base/reset';
 @import 'base/base';
 
@@ -11,7 +11,11 @@
 @import 'components/headings';
 @import 'components/intro';
 @import 'components/sections';
-@import 'components/buttons';
+
+@import 
+    'components/buttons',
+    'components/scrollToProjectsButton';
+    
 @import 'components/webs';
 @import 'components/projects';
 @import 'components/react';

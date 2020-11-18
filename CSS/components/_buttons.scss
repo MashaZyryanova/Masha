@@ -64,44 +64,8 @@
         text-decoration: none;
     }
 }
-@keyframes pulse-button{
-    0%{
-        transform:scale(1);
-    }
-    
-    100%{
-        transform:scale(1.1);
-    }
-}
-// scroll to projects button
-.scroll-to-projects{
-    border:2px solid $sky;
-    border: 2px solid white;
 
-    background:rgba(16, 193, 242, 0.16);
-    height:55px;
-    width:55px;
-    border-radius:50%;
-    position:absolute;
-    bottom:5.5rem;
-    left:50%;
-    transform:translateX(-50%);
-    animation:toProjects .4s infinite;
-    z-index:999;
-}
 
-.arrow{
-    z-index:999;
-    position:absolute;
-    bottom:15px;
-    left:15px;
-    border: solid #00bff3;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    padding:10px;
-    display:inline-block;
-    transform:rotate(45deg);
-}
 
 .explore{
     font-size:14px;

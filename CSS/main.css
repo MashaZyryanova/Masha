@@ -46,7 +46,7 @@ a:visited {
 
 /*
 ==============================================
-Overall styles
+Basic styles
 ==============================================
 */
 .clearfix::after {
@@ -606,59 +606,6 @@ VIDEO INTRO Styles
   text-decoration: none;
 }
 
-@-webkit-keyframes pulse-button {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  100% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-}
-
-@keyframes pulse-button {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  100% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-}
-
-.scroll-to-projects {
-  border: 2px solid rgba(0, 191, 243, 0.9);
-  border: 2px solid white;
-  background: rgba(16, 193, 242, 0.16);
-  height: 55px;
-  width: 55px;
-  border-radius: 50%;
-  position: absolute;
-  bottom: 5.5rem;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  -webkit-animation: toProjects .4s infinite;
-          animation: toProjects .4s infinite;
-  z-index: 999;
-}
-
-.arrow {
-  z-index: 999;
-  position: absolute;
-  bottom: 15px;
-  left: 15px;
-  border: solid #00bff3;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  padding: 10px;
-  display: inline-block;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
 .explore {
   font-size: 14px;
   text-transform: uppercase;
@@ -712,6 +659,57 @@ VIDEO INTRO Styles
   .explore {
     font-size: 0.7rem;
   }
+}
+
+.scroll-to-projects {
+  border: 2px solid white;
+  background: rgba(16, 193, 242, 0.16);
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 5.5rem;
+  left: 50%;
+  -webkit-animation: floating 3s ease infinite;
+          animation: floating 3s ease infinite;
+  z-index: 999;
+}
+
+@-webkit-keyframes floating {
+  0% {
+    bottom: 5.5rem;
+  }
+  50% {
+    bottom: 5.9rem;
+  }
+  100% {
+    bottom: 5.5rem;
+  }
+}
+
+@keyframes floating {
+  0% {
+    bottom: 5.5rem;
+  }
+  50% {
+    bottom: 5.9rem;
+  }
+  100% {
+    bottom: 5.5rem;
+  }
+}
+
+.arrow {
+  z-index: 999;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  padding: 10px;
+  display: inline-block;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .content--web {
