@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 
-
-<!-- Content
+<!-- Main content
 =========================================================== -->
-<section class="intro"> 
+<main>
+  <section class="intro"> 
     <video  id="intro__video" autoplay loop muted >
       <source src="/wp-content/themes/PersonalWebsiteWordpress/assets/fonts/images/BG_FULL_MOVIE.mov">
     </video>
@@ -11,17 +11,17 @@
       <p >Hello. I am a full stack developer living
         in Los Angeles. I strive to write a clean, modular and reusable code.</p>
     </div>
-    <h2 id="intro__text">Masha Zyryanova</h2>
+    <h1 id="intro__text">Masha Zyryanova</h1>
     <button class="arrow-wrapper scroll-to-projects">
       <div class="line"></div>
       <p><i class="arrow"></i></p>
     </button>
-    <div class="section2"></div>
-    <div class="overlay"></div>  
-</section>
-<!-- End Intro -->
+      <div class="section2"></div>
+      <div class="overlay"></div>  
+  </section>
+  <!-- End Intro -->
 
-<section class="web section__bg--white" id="work">
+  <section class="web section__bg--white" id="work">
     <div class="section__text">
       <h1 class="heading__new"> Websites<span class="dot dot--blue"></span></h1>
       <h2 class="subheading subheading--blue">E-commerce &nbsp;<span style="color:black">/</span> &nbsp;landing pages</h2>
@@ -55,11 +55,11 @@
            </div>
       </div>
     </div>   
-</section>
-<!-- End Web section --> 
+  </section>
+  <!-- End Web section --> 
 
 
-<section class="section react section__bg--blue">
+  <section class="section react section__bg--blue">
   <div class="section__text section__text-react">
       <h1 class="heading__new">React<span class="dot dot--white"></span></h1>
       <h1 class="subheading subheading--white">REACT.js application&nbsp;<span style="color:black">/</span> &nbsp;News Update 2020</h1>
@@ -85,15 +85,15 @@
           </div>
     </div>     
   </div>        
-</section>
-<!-- End React section --> 
+  </section>
+  <!-- End React section --> 
 
 
-<div class=" waive waive--white waive--white__react">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,256L60,240C120,224,240,192,360,202.7C480,213,600,267,720,250.7C840,235,960,149,1080,128C1200,107,1320,149,1380,170.7L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
-</div>
+  <div class=" waive waive--white waive--white__react">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,256L60,240C120,224,240,192,360,202.7C480,213,600,267,720,250.7C840,235,960,149,1080,128C1200,107,1320,149,1380,170.7L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+  </div>
 
-<section class="section games section__bg--white">
+  <section class="section games section__bg--white">
   <div class="section__text">
     <h1 class="heading__new">Games<span class="dot dot--blue"></span></h1>
     <h1 class="subheading subheading--blue">SuperPose&nbsp;<span style="color:black">/</span> &nbsp;Puzzles</h1>
@@ -287,5 +287,5 @@
       </div>
 </section>
 <!-- End Skills Section -->
-
+</main>
  <?php get_footer(); ?>
