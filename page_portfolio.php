@@ -9,16 +9,16 @@
 
 <div class="portfolio-bar">
     <h3>
-        <a class="category-link" href="/category/wordpress/">Wordpress</a>  
+        <a class="category-link" href="masha/category/wordpress/">Wordpress</a>  
     </h3>
     <h3 >
-        <a class="category-link" href="/category/react/">React</a>
+        <a class="category-link" href="masha/category/react/">React</a>
     </h3>
     <h3 >
-        <a class="category-link" href="/category/python/">Python</a>
+        <a class="category-link" href="masha/category/python/">Python</a>
     </h3>
     <h3 >
-        <a class="category-link" href="/category/javascript/">JavaScript</a>
+        <a class="category-link" href="masha/category/javascript/">JavaScript</a>
     </h3>
     
 </div>
@@ -28,8 +28,7 @@
 <?php 
  $args = array(  
     'post_type' => 'protectedsites',
-    'post_status' => 'publish',
-     
+    'post_status' => 'publish',    
 );
 
     $loop = new WP_Query( $args ); 
