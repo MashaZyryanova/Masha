@@ -3,6 +3,9 @@
 Basic styles
 ==============================================
 */
+main {
+  margin-top: 115px;
+}
 .clearfix::after {
     content: "";
     clear: both;

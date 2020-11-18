@@ -3,49 +3,53 @@
 Header Styles
 ==============================================
 */
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-   }
- .site__header {
+.site__header {
     background-color: $sky;
-    //background-color: red;
     height: 115px;
     border-bottom: 1px solid $monochromatic;
     z-index: 999;
- }
- .header_desktop{
-     height:100%;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     max-width: 1120px;   
+    &--sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+}
+.header {
+    &__desktop{
+        height:100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1120px; 
+    }
+    &__mobile {
+        display: none;
+    }  
  }
  
- .logo__text {
+.logo__text {
     color: white;
     font-size: 18px;
     letter-spacing: 5px;
     transform:rotate(-90deg);
     transition:0.5s ease-in;
- }
+}
 
- .logo__text:hover {
+.logo__text:hover {
     color:$complimentary;
- }
- 
- .header__nav {
+}
+
+.header__nav {
     width: 60%;   
- }
- .nav {
+}
+.nav {
      padding: 0;
      margin: 0;
      height: 100%;
      display: flex;
      align-items: center;
      justify-content: space-between;
- }
+}
  .nav__menu{
      height: 100%;
      align-items: center;
@@ -90,9 +94,7 @@ Header Styles
  .sub-menu:hover{
      display:block;
  }
- .header_mobile{
-     display: none;
- }
+
  .fa-bars{
      color:white;
      margin-right: 45px;
@@ -102,7 +104,7 @@ Header Styles
      .header_desktop{
          display: none;
      }
-     .header_mobile{
+     .header__mobile{
          height:100%;
          display: flex;
          justify-content: space-between;
@@ -113,6 +115,6 @@ Header Styles
      }
     
  }
- // end styles for navigation
+
  
  
