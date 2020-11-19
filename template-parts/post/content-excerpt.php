@@ -1,7 +1,4 @@
 <div class="entry">
-    
-    
-
     <div class="entry-title">
         <div class="entry-title__one" >
             <a  href="<?php the_permalink(); ?>">

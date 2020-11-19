@@ -12,6 +12,7 @@ $link     = get_field('link');
 ?>
 <!-- Post
 =============================================== -->
+<main id="swup" class="transition-fade">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 <div id="post">
     <?php
@@ -166,5 +167,5 @@ $link     = get_field('link');
 
 </div>
 </article>
-
+</main>
 <?php get_footer('simple'); ?>

@@ -4,6 +4,9 @@
  'abstracts/functions',
  'abstracts/mixins';
 
+@import
+    'animations/pageTransitions';
+
 @import 'base/reset';
 @import 'base/base';
 

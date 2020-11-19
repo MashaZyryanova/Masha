@@ -1,4 +1,14 @@
 /* Typography */
+.transition-fade {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  opacity: 1;
+}
+
+html.is-animating .transition-fade {
+  opacity: 0;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -130,6 +140,10 @@ Header Styles
   max-width: 1120px;
 }
 
+.header__mobile {
+  display: none;
+}
+
 .logo__text {
   color: white;
   font-size: 18px;
@@ -219,10 +233,6 @@ li[id*=menu-item] a {
   display: block;
 }
 
-.header_mobile {
-  display: none;
-}
-
 .fa-bars {
   color: white;
   margin-right: 45px;
@@ -232,7 +242,7 @@ li[id*=menu-item] a {
   .header_desktop {
     display: none;
   }
-  .header_mobile {
+  .header__mobile {
     height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;

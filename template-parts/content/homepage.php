@@ -2,7 +2,7 @@
 
 <!-- Main content
 =========================================================== -->
-<main>
+<main id="swup" class="transition-fade">
   <section class="intro"> 
     <video  id="intro__video" autoplay loop muted >
       <source src="/wp-content/themes/PersonalWebsiteWordpress/assets/fonts/images/BG_FULL_MOVIE.mov">

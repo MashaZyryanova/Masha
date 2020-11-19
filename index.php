@@ -1,5 +1,5 @@
 <?php get_header();?>
-
+<main id="swup" class="transition-fade">
 <h1 id="heading__posts" class="heading__new"><?php wp_title(' ', true , ' '); ?><span class="dot dot--blue"></span></h1>
 
 <div class="portfolio-bar">
@@ -32,5 +32,5 @@
     ?>
 </div> 
 <!-- End posts -->
-
+</main>
 <?php get_footer('simple'); ?>

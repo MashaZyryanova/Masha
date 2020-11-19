@@ -12,6 +12,7 @@ $link     = get_field('link');
 ?>
 <!-- Post
 =============================================== -->
+<main id="swup" class="transition-fade">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 <div id="post">
     <?php
@@ -42,5 +43,5 @@ $link     = get_field('link');
             <a class="explore explore--dark" style="font-weight:700;" href="https://localhost/masha/portfolio-new/">Back to portfolio</a></h5>
     </div>
 
-
+</main>
 <?php get_footer('simple'); ?>

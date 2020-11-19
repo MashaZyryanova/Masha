@@ -5,11 +5,12 @@
 */
 ?>
 <?php get_header(); ?>
+<main id="swup" class="transition-fade">
 <h1 id="heading__posts" class="heading__new"><?php wp_title(' ', true , ' '); ?><span class="dot dot--blue"></span></h1>
 
 <div class="portfolio-bar">
     <h3>
-        <a class="category-link" href="masha/category/wordpress/">Wordpress</a>  
+        <a class="category-link" href="/category/wordpress/">Wordpress</a>  
     </h3>
     <h3 >
         <a class="category-link" href="masha/category/react/">React</a>
@@ -57,4 +58,6 @@ $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish
 <?php endif; ?>
 
 </div>	
-	<?php get_footer('simple'); ?>
+</main>
+
+<?php get_footer('simple'); ?>
