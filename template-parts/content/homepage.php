@@ -5,7 +5,8 @@
 <main id="swup" class="transition-fade">
   <section class="intro"> 
     <video  id="intro__video" autoplay loop muted >
-      <source src="/wp-content/themes/PersonalWebsiteWordpress/assets/fonts/images/BG_FULL_MOVIE.mov">
+      <!-- <source src="/wp-content/themes/PersonalWebsiteWordpress/assets/images/BG_FULL_MOVIE.mov"> -->
+      <source src="<?php echo get_theme_file_uri('assets/images/BG_FULL_MOVIE.mov'); ?>">
     </video>
     <div class="intro__col">
       <p >Hello. I am a full stack developer living
@@ -17,7 +18,7 @@
       <p><i class="arrow"></i></p>
     </button>
       <div class="section2"></div>
-      <!-- <div class="overlay"></div>   -->
+      <div class="overlay"></div>  
   </section>
   <!-- End Intro -->
 
@@ -29,30 +30,25 @@
     </div>
     <div class="content--web">
       <div class="project--web project--web__two" >  
-               <div class="project__image">
-                    <a href="/vivid-fashion/">
+        <div class="project__image">
+          <a href="/vivid-fashion/">
 						 <img class="responsive" width="600px;" height="auto" src="/wp-content/uploads/2020/06/vividFashion.png"  alt="Vivid Fashion"/>
-						
 					</a>
-                </div>
+        </div>
       </div>
       <div class=" project--web project--web__three" >  
-          
-                <div class="project__image">
-                    <a href="/web2/">
+        <div class="project__image">
+          <a href="/web2/">
 						<img class="responsive" width="600px;" height="auto" src="/wp-content/uploads/2020/06/Component-1.png"  alt="Map"/>
-                      
-                  </a>
-                </div>
-          
-        
+          </a>
+        </div> 
       </div>
       <div class=" project--web project--web__one" >  	
-           <div class="project__image">
-                 <a href="/web1/">
-					<img class="responsive" width="600px;" height="auto" src="/wp-content/uploads/2020/06/Charity_home.png"  alt="Charity"/>
-                 </a>
-           </div>
+        <div class="project__image">
+          <a href="/web1/">
+					  <img class="responsive" width="600px;" height="auto" src="/wp-content/uploads/2020/06/Charity_home.png"  alt="Charity"/>
+          </a>
+        </div>
       </div>
     </div>   
   </section>

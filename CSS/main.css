@@ -239,7 +239,7 @@ li[id*=menu-item] a {
 }
 
 @media screen and (max-width: 1100px) {
-  .header_desktop {
+  .header__desktop {
     display: none;
   }
   .header__mobile {
@@ -575,15 +575,15 @@ VIDEO INTRO Styles
 .intro {
   position: relative;
   width: 100%;
-  min-height: 80vh;
-  background-color: #ccc;
+  min-height: calc(100vh - 115px);
+  height: calc(100vh - 115px);
 }
 
 .intro__col {
   position: absolute;
-  top: 8.2rem;
+  top: 8rem;
   left: auto;
-  height: 70%;
+  height: 72%;
   width: 58vh;
   margin-left: 7%;
   background-color: rgba(0, 191, 243, 0.9);
@@ -608,7 +608,8 @@ VIDEO INTRO Styles
 
 #intro__video {
   width: 100%;
-  min-height: 80vh;
+  min-height: calc(100vh - 115px);
+  max-height: calc(100vh - 115px);
   -o-object-fit: fill;
      object-fit: fill;
 }
@@ -904,34 +905,34 @@ VIDEO INTRO Styles
   width: 55px;
   border-radius: 50%;
   position: absolute;
-  bottom: 5.5rem;
+  bottom: 5rem;
   left: 50%;
   -webkit-animation: floating 3s ease infinite;
           animation: floating 3s ease infinite;
-  z-index: 999;
+  z-index: 998;
 }
 
 @-webkit-keyframes floating {
   0% {
-    bottom: 5.5rem;
+    bottom: 5rem;
   }
   50% {
-    bottom: 5.9rem;
+    bottom: 5.4rem;
   }
   100% {
-    bottom: 5.5rem;
+    bottom: 5rem;
   }
 }
 
 @keyframes floating {
   0% {
-    bottom: 5.5rem;
+    bottom: 5rem;
   }
   50% {
-    bottom: 5.9rem;
+    bottom: 5.4rem;
   }
   100% {
-    bottom: 5.5rem;
+    bottom: 5rem;
   }
 }
 

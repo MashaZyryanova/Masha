@@ -1,9 +1,8 @@
 /* Typography */
-
 $font1: 'Roboto slab';
 $font2: 'Raleway', sans-serif;
 
-
+// Colors
 $sky1:#00bff3;
 $complimentary:#f34900;
 $monochromatic:#2cb4da;
@@ -19,3 +18,7 @@ $bgBlue:#19c5f4;
 $bgCalm:#94d2e0;
 $bgLight:#19c5f4d1;
 $projectBorder:#93d1dfc7;
+
+//Variables
+$headerHeight: 115px;
+$introHeight: calc(100vh - #{$headerHeight});

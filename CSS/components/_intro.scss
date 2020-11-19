@@ -6,13 +6,14 @@ VIDEO INTRO Styles
 .intro {
     position:relative;
     width: 100%; 
-    min-height: 80vh; 
-    background-color: #ccc;
+    min-height: $introHeight; 
+    height: $introHeight;
+   
     &__col {
         position:absolute;
-        top:8.2rem;
+        top:8rem;
         left:auto;
-        height:70%;
+        height:72%;
         width:58vh;
         margin-left:7%;
         background-color:$sky;
@@ -36,7 +37,8 @@ VIDEO INTRO Styles
 }
 #intro__video {
     width: 100%;
-    min-height: 80vh;
+    min-height:$introHeight;
+    max-height: $introHeight;
     object-fit: fill; 
 }
 #intro__text {

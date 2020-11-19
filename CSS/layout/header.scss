@@ -5,7 +5,7 @@ Header Styles
 */
 .site__header {
     background-color: $sky;
-    height: 115px;
+    height: $headerHeight;
     border-bottom: 1px solid $monochromatic;
     z-index: 999;
     &--sticky {
@@ -101,7 +101,7 @@ Header Styles
  }
  
  @media screen and(max-width: 1100px){
-     .header_desktop{
+     .header__desktop{
          display: none;
      }
      .header__mobile{
