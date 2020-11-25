@@ -105,19 +105,4 @@ form {
       -ms-flex-align: end;
           align-items: flex-end;
 }
-
-@media screen and (min-width: 1600px) {
-  .about {
-    margin-left: 500px;
-  }
-}
-
-.bio {
-  padding: 20px;
-}
-
-.about__wrapper {
-  border: 1px dotted white;
-  padding: 12px 0px;
-}
 /*# sourceMappingURL=new.css.map */

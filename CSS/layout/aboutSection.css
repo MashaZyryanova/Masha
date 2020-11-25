@@ -3,10 +3,31 @@
 About Styles
 ==============================================
 */
+.about__wrapper {
+  position: relative;
+  height: 50%;
+  overflow-x: hidden;
+}
+
+canvas {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  bottom: 0;
+  z-index: 100;
+  overflow-x: hidden;
+}
+
 .about {
+  padding: 4rem 5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   overflow: hidden;
-  margin-left: 300px;
-  max-width: 1180px;
+  z-index: 997;
+  background-color: #0fc1f1;
 }
 
 .about__text {
@@ -24,36 +45,6 @@ About Styles
   height: 400px;
   float: left;
   opacity: .2;
-}
-
-@media screen and (max-width: 1201px) {
-  .about {
-    margin: auto;
-  }
-  .ellipse {
-    display: none;
-  }
-  .about__text {
-    width: 80%;
-    margin: 0 auto;
-  }
-  .about__button {
-    margin: 40px auto;
-  }
-}
-
-@media screen and (max-width: 767.98px) {
-  .about__text {
-    font-size: 0.8rem;
-    line-height: 1.1rem;
-  }
-}
-
-@media screen and (max-width: 576.98px) {
-  .about {
-    width: 97%;
-    padding: 40px;
-  }
 }
 
 waive > svg {

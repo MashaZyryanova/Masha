@@ -229,10 +229,11 @@
 <!-- End Python -->
 
 
-<section class="bio section__bg--blue" >
+<section class="site__about section__bg--blue" >
 	<div class="about__wrapper" >
-		<div class="about" id="about">
-		  <div class="ellipse"></div>
+    <canvas></canvas>
+		<div class="about shadow" id="about">
+		  <!-- <div class="ellipse"></div> -->
 		  <p class="about__text">Hello! My name is <span class="yellow">Masha</span>. I am a <span class="yellow">full stack developer</span> living
 			in Los Angeles. My biggest inspiration is nature. Whether I am looking for a prefect color scheme to design a website,
 			or imagining an engineering device, I often discover solutions by looking at the world around me.
@@ -240,8 +241,8 @@
 			 One of my favorite things is to participate and compete in hackathons. I love working 
 			in a team environment while building something awesome on a tight deadline.
 		  </p>
-		</div>
     </div>
+  </div>
 </section> 
 <!-- End About -->
 

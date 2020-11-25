@@ -13,6 +13,7 @@ function mz_enqueue(){
     wp_enqueue_script('mz_nav', get_template_directory_uri() . '/js/nav.js','', '', true );
     wp_enqueue_script('mz_main', get_template_directory_uri() . '/js/main.js','', '', true );
     wp_enqueue_script('mz_swup', get_template_directory_uri() . '/js/transitions.js','', '', true );
+    wp_enqueue_script('mz_canvas', get_template_directory_uri() . '/js/canvas.js','', '', true );
     
 }
 ?>
