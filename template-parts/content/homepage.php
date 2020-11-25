@@ -228,12 +228,21 @@
 </section>
 <!-- End Python -->
 
-
-<section class="site__about section__bg--blue" >
-	<div class="about__wrapper" >
+<section class="site__about section__bg--blue about" >
+	<div class="about__desktop about__wrapper" >
     <canvas></canvas>
-		<div class="about shadow" id="about">
-		  <!-- <div class="ellipse"></div> -->
+		<div class="about__textWrapper shadow"">
+		  <p class="about__text">Hello! My name is <span class="yellow">Masha</span>. I am a <span class="yellow">full stack developer</span> living
+			in Los Angeles. My biggest inspiration is nature. Whether I am looking for a prefect color scheme to design a website,
+			or imagining an engineering device, I often discover solutions by looking at the world around me.
+			In terms of coding, I strive to write a clean modular reusable code.
+			 One of my favorite things is to participate and compete in hackathons. I love working 
+			in a team environment while building something awesome on a tight deadline.
+		  </p>
+    </div>
+  </div>
+	<div class="about__mobile about__wrapper" >
+		<div class="about__textWrapper shadow"">
 		  <p class="about__text">Hello! My name is <span class="yellow">Masha</span>. I am a <span class="yellow">full stack developer</span> living
 			in Los Angeles. My biggest inspiration is nature. Whether I am looking for a prefect color scheme to design a website,
 			or imagining an engineering device, I often discover solutions by looking at the world around me.
@@ -245,7 +254,7 @@
   </div>
 </section> 
 <!-- End About -->
-
+<button id="stopSnow">Stop Snow</button>
 
 <section class="section skills bg_white" id="skills">
     

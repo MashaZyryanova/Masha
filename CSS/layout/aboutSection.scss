@@ -3,10 +3,26 @@
 About Styles
 ==============================================
 */
-.about__wrapper {
-    position: relative;
-    height: $canvasHeight;
-    overflow-x: hidden;
+.about {
+    &__desktop {
+        display: none;
+    }
+    &__mobile {
+        display: block;
+    }
+    &__textWrapper {
+        padding: 1.5rem;
+        overflow: hidden;
+        z-index: 997;
+        background-color: #0fc1f1;
+    }
+    &__text {
+        font-family: $font1;
+        font-size:0.8rem;
+        line-height:1.1rem;
+        letter-spacing: 3px;
+        color:white;   
+    }
 }
 canvas {
     position: absolute;
@@ -17,60 +33,44 @@ canvas {
     overflow-x: hidden;
 }
 
-.about {
-    padding: 4rem 5rem;
-    position: absolute;
-    top: 50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    overflow: hidden;
-    z-index: 997;
-    background-color: #0fc1f1;
-}
-.about__text {
-    font-family: $font1;
-    font-size: 16px;
-    letter-spacing: 3px;
-    color:white;
-    line-height: 1.4em;
-    max-width:600px;
-}
-.ellipse {
-  shape-outside: ellipse(100px 200px at 50% 50%);
-  width: 350px;
-  height: 400px;
-  float: left;
-  opacity: .2;
+
+@media screen and (min-width: 768px) {
+    .about {
+        &__desktop {
+            display:block;
+        }
+        &__mobile {
+            display: none;
+        }
+    
+        &__wrapper {
+            position: relative;
+            height: $canvasHeightSmallScreen;
+            overflow-x: hidden;
+        }
+        &__textWrapper {
+            position: absolute;
+            top: 50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            padding: 2.5rem 3rem;
+        }
+        &__text {
+           font-size: 16px;
+           letter-spacing: 3px;
+           line-height: 1.4em;    
+        }
+    }
 }
 
-// @media screen and (max-width: 1201px){
-//     .about{
-//         margin:auto;  
-//     } 
-//     .ellipse{
-//         display:none;
-//     }
-//     .about__text{
-//         width:80%;
-//         margin:0 auto;
-//     }
-//     .about__button{
-//         margin:40px auto;
-//     }
-// }
-// @media screen and (max-width:767.98px){
-//     .about__text{
-//         font-size:0.8rem;
-//         line-height:1.1rem;
-//     }
-// }
-// @media screen and(max-width:576.98px){
-//     .about{
-//         width:97%;
-//         padding:40px;
-//     }
-// }
-waive>svg{
-    display:block;
-    overflow: hidden;
+
+@media screen and (min-width: 1200px) {
+    .about {
+        &__wrapper {
+            height: $canvasHeight;
+        }
+        &__textWrapper {
+            padding: 4rem 5rem;
+        }
+    }
 }
