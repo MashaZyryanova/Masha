@@ -491,6 +491,43 @@ i.fab:hover {
   }
 }
 
+.cursor {
+  z-index: 2000;
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid white;
+  background-color: rgba(0, 191, 243, 0.9);
+  border-radius: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-animation: cursorAnimation 0.5s infinite alternate;
+          animation: cursorAnimation 0.5s infinite alternate;
+  pointer-events: none;
+}
+
+@-webkit-keyframes cursorAnimation {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+}
+
+@keyframes cursorAnimation {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+}
+
 .section__text {
   padding-left: 140px;
 }
@@ -2082,6 +2119,7 @@ canvas {
   bottom: 0;
   z-index: 100;
   overflow-x: hidden;
+  pointer-events: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -2093,7 +2131,7 @@ canvas {
   }
   .about__wrapper {
     position: relative;
-    height: calc(100vh/1.1);
+    height: calc(100vh/1.16);
     overflow-x: hidden;
   }
   .about__textWrapper {
@@ -2102,7 +2140,7 @@ canvas {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    padding: 2rem 2.5rem;
+    padding: 2.5rem 3rem;
   }
   .about__text {
     font-size: 16px;
@@ -2113,11 +2151,31 @@ canvas {
 
 @media screen and (min-width: 1200px) {
   .about__wrapper {
-    height: calc(100vh/1.8);
+    height: 407;
   }
   .about__textWrapper {
     padding: 4rem 5rem;
   }
+}
+
+#stopSnow {
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 998;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f4f1ee), to(#fff));
+  background-image: linear-gradient(top, #f4f1ee, #fff);
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.3), inset 0px 4px 1px 1px white, inset 0px -3px 1px 1px rgba(204, 198, 197, 0.5);
+          box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.3), inset 0px 4px 1px 1px white, inset 0px -3px 1px 1px rgba(204, 198, 197, 0.5);
+  height: 70px;
+  margin: 0 30px 30px 0;
+  position: relative;
+  width: 70px;
+  -webkit-transition: all .1s linear;
+  transition: all .1s linear;
 }
 
 .project__container:hover {

@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+<!-- <div class="cursor"></div> -->
 <!-- Main content
 =========================================================== -->
 <main id="swup" class="transition-fade">
@@ -32,8 +32,9 @@
       <div class="project--web project--web__two" >  
         <div class="project__image">
           <a href="/vivid-fashion/">
-						 <img class="responsive" width="600px;" height="auto" src="/wp-content/uploads/2020/06/vividFashion.png"  alt="Vivid Fashion"/>
-					</a>
+						 <!-- <img class="responsive" width="600px;" height="auto" src="/wp-content/uploads/2020/06/vividFashion.png"  alt="Vivid Fashion"/> -->
+             <img class="responsive" width="600px;" height="auto" src="<?php echo get_theme_file_uri('assets/images/vividFashion.png'); ?>">
+            </a>
         </div>
       </div>
       <div class=" project--web project--web__three" >  
@@ -240,6 +241,7 @@
 			in a team environment while building something awesome on a tight deadline.
 		  </p>
     </div>
+    <button id="stopSnow">Toggle Snow</button>
   </div>
 	<div class="about__mobile about__wrapper" >
 		<div class="about__textWrapper shadow"">
@@ -254,7 +256,7 @@
   </div>
 </section> 
 <!-- End About -->
-<button id="stopSnow">Stop Snow</button>
+
 
 <section class="section skills bg_white" id="skills">
     

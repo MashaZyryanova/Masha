@@ -5,8 +5,6 @@
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <?php wp_head()?>
         <script src="https://kit.fontawesome.com/1ec81f68fa.js"></script>
-        
-        
         <title>Masha Zyryanova</title>    
     </head>
     <body <?php body_class('site'); ?> >

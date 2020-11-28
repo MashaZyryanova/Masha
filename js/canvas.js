@@ -1,55 +1,48 @@
-function startSnowfall() {
-  const canvas = document.querySelector('canvas');
+let canvas = document.querySelector('canvas');
+let c = canvas.getContext('2d');
+let floor = [];
+let runAnimation;
+
+
+//set canvas size depending on a viewport
+function setCanvas(canvas) {
   canvas.width = window.innerWidth;
-  if(window.innerWidth>=768 && window.innerWidth < 1200) {
-    canvas.height = window.innerHeight/1.16;
-    //console.log('changed canvas height to', canvas.height 
+  if(screen.width>=768 && screen.width < 1200) {
+    
+   canvas.height = window.innerHeight/1.16;
+    console.log('initial canvas height ', canvas.height )
+    
   }
   else {
-    canvas.height = window.innerHeight/1.8;
-  }
-  
-  const c = canvas.getContext('2d');
+    // canvas.height = window.innerHeight/1.8;
+    canvas.height = 407;
+    console.log('Initial canvas height for bigger screens ', canvas.height )
+  } 
+}
 
-  const snowflakesCount = 300;
-  let floor = [];
+function resizeCanvas() {
+   canvas = document.querySelector('canvas');
+  
+  canvas.width = window.innerWidth;
+  console.log(window.innerWidth);
+  console.log(screen.width)
+  if(screen.width>=768 && screen.width < 1200) {
+    canvas.height = 632;
+    console.log('height in resize', canvas.height )
+  }
+  else {
+    canvas.height = 407;
+    console.log(' in resize height for bigger screens ', canvas.height )
+  } 
+}
+//create ground
+function createGround() {
   for (let i=0;i<198; i++) {
     floor[i] = {xCoord:i*10+10, yCoord: canvas.height}
-  }
-  
- 
-  const debounce = (func) => {
-    let timer
-    return (event) => {
-      if (timer) { clearTimeout(timer) }
-      timer = setTimeout(func, 100, event)
-    }
-  }
+  } 
+  //console.log(floor)
+}
 
-  // window.addEventListener('resize', debounce(() => {
-  //   canvas.width = window.innerWidth
-  //   canvas.height = window.innerHeight / 1.8 
-  // }))
-  const colors = ['#fffaf0','#f2f3f4', '#ffffff', '#f8f8ff', '#fffaf0', '#c4d8e2']
-  var snowArray = []
-
-  function createNewSnowflake() {
-    const radius = Math.random() * 20 + 1
-    const x = Math.random() * (innerWidth - radius  * 2) + radius
-    const y = Math.random() * (canvas.height - radius  * 2) + radius
-    const dx = (Math.random() - 0.5) * 2
-    const dy = (Math.random() - 0.5) * 2
-    const fontSize = Math.floor(Math.random()*35 +1)
-    const snowflake = new Snowflake(x, y, dx, dy, fontSize, false, false, false)
-    snowArray.push(snowflake);
-    snowflake.draw()
-  }
-
-  const init = () => {
-  for (let i = 0; i < snowflakesCount; i++) {
-      createNewSnowflake();  
-    }
-  }
 
 class Snowflake {
   constructor(x, y, dx, dy, fontSize, reachedGround, counted, getx) {
@@ -64,11 +57,11 @@ class Snowflake {
       this.snowHeight = canvas.height;
       this.color = colors[Math.floor(Math.random() * colors.length)]
   }
-    draw () {
-        c.font = this.fontSize +'px serif'
-        c.strokeStyle= this.color;
-        c.strokeText("\u2744",this.x,this.y)
-    }
+  draw () {
+    c.font = this.fontSize +'px serif'
+    c.strokeStyle= this.color;
+    c.strokeText("\u2744",this.x,this.y)
+  }
 
   update() {
     if(this.x  > innerWidth || this.x < 0) {
@@ -91,9 +84,11 @@ class Snowflake {
       })
       if(bucket) {
           this.snowHeight = bucket.yCoord;
+         
       }
       else {
           this.snowHeight = 520;
+          
       }
       this.getx = true    
     }
@@ -102,6 +97,7 @@ class Snowflake {
         this.dx = 0;
         this.reachedGround = true;
         this.y = this.snowHeight; 
+        
     }
 
     if(this.reachedGround && !this.counted) {
@@ -119,45 +115,91 @@ class Snowflake {
     }
       
   }
-
   this.draw();
+ }
 }
+//screate snowflakes
+const snowflakesCount = 300;
+const colors = ['#fffaf0','#f2f3f4', '#ffffff', '#f8f8ff', '#fffaf0', '#c4d8e2']
+var snowArray = []
+//1. Create one snowflake with random values
+function createNewSnowflake() {
+  const radius = Math.random() * 20 + 1
+  const x = Math.random() * (innerWidth - radius  * 2) + radius
+  const y = Math.random() * (canvas.height - radius  * 2) + radius
+  const dx = (Math.random() - 0.5) * 2
+  const dy = (Math.random() - 0.5) * 2
+  const fontSize = Math.floor(Math.random()*35 +1)
+  const snowflake = new Snowflake(x, y, dx, dy, fontSize, false, false, false)
+  snowArray.push(snowflake);
+  snowflake.draw()
 }
 
-init()
-let runAnimation = true;
+// create many snowflakes
+  function initSnowflakes() {
+    for (let i = 0; i < snowflakesCount; i++) {
+        createNewSnowflake();  
+    }
+  }
+
+
+
+
+var animationId;
 function animate() {
   if(runAnimation) {
-    requestAnimationFrame(animate)
+    if (animationId) {
+      window.cancelAnimationFrame (animationId)
+    }
+   animationId= requestAnimationFrame(animate)
+    //console.log(animatedId)
     c.clearRect(0,0,innerWidth, innerHeight);
     for (let i= 0; i < snowArray.length; i++) {
       snowArray[i].update();
     }
   }
- 
 }
 
-window.addEventListener('resize', function(){
-  canvas.width = window.innerWidth;
-  const width = window.innerWidth
-  if(width>=768 && width < 1200) {
-      canvas.height = window.innerHeight/1.11;
-      console.log('changed canvas height to', canvas.height )
-  }
-  runAnimation = !runAnimation;
-  startSnowfall();
-}
-)
- let animationId = requestAnimationFrame(animate);
- console.log('AnimationId ', animationId)
+
+
 
     let stop = document.querySelector('#stopSnow')
-    stop.addEventListener('click', function(animationId){
+    stop.addEventListener('click', function() {
       runAnimation = !runAnimation;
-      //window.cancelAnimationFrame(animationId);
-      console.log(runAnimation)
+      if(runAnimation) {
+        animationId= requestAnimationFrame(animate);
+        //let it snow
+        for (let i = 0; i < 12; i++) {
+          console.log('creating new snowflake')
+          const radius = Math.random() * 20 + 1
+          const x = Math.random() * (innerWidth - radius  * 2) + radius
+          const snowflake = new Snowflake(x, 1, 0.1, 2, 20, false, false, false)
+          snowArray.push(snowflake);
+          snowflake.draw()
+       }
+      }
     })
+
+    setCanvas(canvas);
+function startSnowfall() {
+  runAnimation = true;
+  createGround();
+  initSnowflakes();
+  animate();
 }
 
 startSnowfall();
+
+window.addEventListener('resize', function() {
+  runAnimation=false;
+  snowArray=[]
+  c.clearRect(0,0,innerWidth, innerHeight);
+  resizeCanvas()
+  floor.forEach(bucket => {
+    bucket.yCoord = canvas.height;
+     
+  })
+  startSnowfall();
+  
+})
 

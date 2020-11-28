@@ -23,5 +23,6 @@ $projectBorder:#93d1dfc7;
 $headerHeight: 115px;
 $introHeight: calc(100vh - #{$headerHeight});
 
-$canvasHeight: calc(100vh/1.8);
-$canvasHeightSmallScreen: calc(100vh/1.1)
+//$canvasHeight: calc(100vh/1.8);
+$canvasHeight: 407;
+$canvasHeightSmallScreen: calc(100vh/1.16);

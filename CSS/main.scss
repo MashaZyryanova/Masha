@@ -14,7 +14,9 @@
     'layout/header',
     'layout/footer';
 
-@import 'components/headings';
+@import
+        'components/cursor',
+     'components/headings';
 @import 'components/intro';
 @import 'components/sections';
 
