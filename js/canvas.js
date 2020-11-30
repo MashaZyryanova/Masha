@@ -1,5 +1,6 @@
 let canvas = document.querySelector('canvas');
 let c = canvas.getContext('2d');
+let startedSnowfall = false;
 let floor = [];
 let runAnimation;
 
@@ -15,7 +16,7 @@ function setCanvas(canvas) {
   }
   else {
     // canvas.height = window.innerHeight/1.8;
-    canvas.height = 407;
+    canvas.height = 520;
     console.log('Initial canvas height for bigger screens ', canvas.height )
   } 
 }
@@ -31,7 +32,7 @@ function resizeCanvas() {
     console.log('height in resize', canvas.height )
   }
   else {
-    canvas.height = 407;
+    canvas.height = 520;
     console.log(' in resize height for bigger screens ', canvas.height )
   } 
 }
@@ -143,8 +144,6 @@ function createNewSnowflake() {
   }
 
 
-
-
 var animationId;
 function animate() {
   if(runAnimation) {
@@ -163,24 +162,10 @@ function animate() {
 
 
 
-    let stop = document.querySelector('#stopSnow')
-    stop.addEventListener('click', function() {
-      runAnimation = !runAnimation;
-      if(runAnimation) {
-        animationId= requestAnimationFrame(animate);
-        //let it snow
-        for (let i = 0; i < 12; i++) {
-          console.log('creating new snowflake')
-          const radius = Math.random() * 20 + 1
-          const x = Math.random() * (innerWidth - radius  * 2) + radius
-          const snowflake = new Snowflake(x, 1, 0.1, 2, 20, false, false, false)
-          snowArray.push(snowflake);
-          snowflake.draw()
-       }
-      }
-    })
 
-    setCanvas(canvas);
+
+setCanvas(canvas);
+
 function startSnowfall() {
   runAnimation = true;
   createGround();
@@ -188,7 +173,24 @@ function startSnowfall() {
   animate();
 }
 
-startSnowfall();
+
+
+
+function snowOnScroll() {
+  let aboutSection = document.querySelector('.about__desktop');
+  let aboutSectionPosition = aboutSection.getBoundingClientRect().top;
+  let screenPosition = window.innerHeight;
+ 
+  if(aboutSectionPosition < screenPosition-200 && startedSnowfall === false) {
+    startSnowfall();
+    startedSnowfall = true;
+  }
+}
+
+window.addEventListener('scroll', function(e) {
+  snowOnScroll();
+})
+
 
 window.addEventListener('resize', function() {
   runAnimation=false;
@@ -200,6 +202,21 @@ window.addEventListener('resize', function() {
      
   })
   startSnowfall();
-  
 })
 
+let stop = document.querySelector('#stopSnow')
+stop.addEventListener('click', function() {
+  runAnimation = !runAnimation;
+  if(runAnimation) {
+    animationId= requestAnimationFrame(animate);
+    //let it snow
+    for (let i = 0; i < 12; i++) {
+      console.log('creating new snowflake')
+      const radius = Math.random() * 20 + 1
+      const x = Math.random() * (innerWidth - radius  * 2) + radius
+      const snowflake = new Snowflake(x, 1, 0.1, 2, 20, false, false, false)
+      snowArray.push(snowflake);
+      snowflake.draw()
+   }
+  }
+})
