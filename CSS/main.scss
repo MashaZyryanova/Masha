@@ -1,27 +1,30 @@
 //1. Configuration and helpers
 @import
- 'abstracts/variables',
- 'abstracts/functions',
- 'abstracts/mixins';
+    'abstracts/variables',
+    'abstracts/functions',
+    'abstracts/mixins';
 
 @import
     'animations/pageTransitions';
 
-@import 'base/reset';
-@import 'base/base';
+@import 
+    'base/reset',
+    'base/base';
 
 @import 
     'layout/header',
-    'layout/footer';
+    'layout/footer',
+     'layout/new',
+    'layout/sections',
+    'layout/aboutSection';
 
 @import
-        'components/cursor',
-     'components/headings';
-@import 'components/intro';
-@import 'components/sections';
-
-@import 
     'components/buttons',
+    'components/cursor',
+    'components/headings',
+    'components/intro',
+    'components/sections',
+    
     'components/scrollToProjectsButton';
 
 @import 'components/webs';
@@ -29,9 +32,6 @@
 @import 'components/react';
 @import 'components/post';
 
-@import 'layout/new';
-@import 'layout/sections';
-@import 'layout/aboutSection';
 
 
 
@@ -42,44 +42,5 @@
 
 
 
-
-.project__container:hover{
-    box-shadow: 5px 10px $monochromatic;
-    border:2px solid $monochromatic;  
-}
-.project__description{
-    position:relative;
-    margin-top: 20px;
-    height: 480px;
-    width:18%;
-    // max-width:18%;
-    background-color: white;
-    text-align: center;
-    padding: 16px 30px;
-    border-radius:  20px;
-     box-shadow: 2rem 1rem 2rem rgba(0, 0, 0, 0.39);
-    color:$bodyText;
-}
-.project__description:hover{
-    box-shadow: 5px 10px $monochromatic;
-    border:2px solid $monochromatic;  
-}
-
-.built__with{
-  margin-bottom:45px;
-  text-align:center;
-  color:$sky;
-  text-transform: uppercase;
-  font-size:16px;
-}
-.project__text{
- margin-bottom: 12px;
- text-transform: uppercase;
- color:$bodyText;
- font-weight: 500;
- font-size: 14px;
- letter-spacing:2px;
- text-align:center;
-}
 
 

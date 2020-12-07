@@ -3,29 +3,15 @@
 ******************************************************/
 .site__footer{
     position:relative;
-    text-align: center; 
-    background-color: white;
-    animation: wave 30s liner infinite;
-    overflow-x: hidden;
+    text-align: center;   
 }
 
 .waive-container>svg{
     display:block;
-    max-width:100vw;
-    width:100vw;   
+    width:100vw;  
+    overflow-x: hidden; 
 }
-waive>svg{
-    display:block;
-    overflow: hidden;
-}
-@keyframes wave{
-    0%{
-        transform:translateX(0px);
-    }
-    100%{
-        transform:translateX(500px);
-    }
-}
+
 .contact__container{
     position:absolute;
     bottom:60px;
@@ -54,7 +40,7 @@ waive>svg{
     color:$complimentary;
     text-decoration: none;
 }
-.phone:hover{
+.phone:hover {
     color:$complimentary;
     text-decoration: none;
     transition:0.5s ease-in;
@@ -97,7 +83,7 @@ i.fab:hover{
     }
     
 }
-@media screen and (max-width:550px){
+@media screen and(max-width:550px){
     .waive-container>svg{
         transform:scaleY(1.5);
     }
