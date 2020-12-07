@@ -40,7 +40,8 @@
       <div class=" project--web project--web__three" >  
         <div class="project__image">
           <a href="/web2/">
-						<img class="responsive" width="600px;" height="auto" src="/wp-content/uploads/2020/06/Component-1.png"  alt="Map"/>
+						<!-- <img class="responsive" width="600px;" height="auto" src="/wp-content/uploads/2020/06/Component-1.png"  alt="Map"/> -->
+            <img class="responsive" width="600px;" height="auto" src="<?php echo get_theme_file_uri('assets/images/Component-1.png'); ?>">
           </a>
         </div> 
       </div>
@@ -274,9 +275,9 @@
         <div class="content--skills__container">
           <h2 class = "content--skills__heading">Client Side Technologies</h2>
           <p>HTML5</p>
-          <p>CSS3</p>
+          <p>CSS3, SASS</p>
           <p>React.js, Redux</p>
-		  <p>SASS</p>
+		      <p>Vue, Vuex</p>
           <p>Nunjucks</p>
            <p>Jinja</p>
           <p>Figma</p>

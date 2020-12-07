@@ -2,22 +2,22 @@
     margin: 0 auto;
   }
   
-  .hero_video {
-      max-width:580px;
-      height: auto;
-      margin: 0 auto;
-      border: 5px solid #081b5e; border-right: 9px solid #081b5e; border-left: 9px solid #081b5e;
-  }
+.hero_video {
+    max-width:580px;
+    height: auto;
+    margin: 0 auto;
+    border: 5px solid #081b5e; border-right: 9px solid #081b5e; border-left: 9px solid #081b5e;
+}
   
-  .hero_video >iframe {
-      width: 100%;
-  }
-  @media screen and (max-width: 600px) {
-      .hero_video {
-          max-width: 87%;
-      }
-      
-  }
+.hero_video >iframe {
+    width: 100%;
+}
+@media screen and (max-width: 600px) {
+    .hero_video {
+        max-width: 87%;
+    }
+    
+}
   @media screen and (max-width: 500px) {
       .hero_video >iframe {
          height:22%;

@@ -945,6 +945,8 @@ VIDEO INTRO Styles
   position: absolute;
   bottom: 5rem;
   left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   -webkit-animation: floating 3s ease infinite;
           animation: floating 3s ease infinite;
   z-index: 998;
@@ -2131,7 +2133,7 @@ canvas {
   }
   .about__wrapper {
     position: relative;
-    height: calc(100vh/1.16);
+    height: 632;
     overflow-x: hidden;
   }
   .about__textWrapper {
@@ -2165,15 +2167,32 @@ canvas {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   z-index: 998;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f4f1ee), to(#fff));
-  background-image: linear-gradient(top, #f4f1ee, #fff);
+  border: none !important;
   border-radius: 50%;
+  -webkit-box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.3), inset 0px 4px 1px 1px white, inset 0px -3px 1px 1px rgba(204, 198, 197, 0.5);
+          box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.3), inset 0px 4px 1px 1px white, inset 0px -3px 1px 1px rgba(204, 198, 197, 0.5);
   height: 70px;
   margin: 0 30px 30px 0;
   position: relative;
   width: 70px;
   -webkit-transition: all .1s linear;
   transition: all .1s linear;
+}
+
+#stopSnow:hover {
+  cursor: pointer;
+}
+
+#stopSnow:after {
+  color: #e9e6e4;
+  content: "";
+  display: block;
+  font-size: 30px;
+  height: 30px;
+  text-decoration: none;
+  text-shadow: 0px -1px 1px #bdb5b4, 1px 1px 1px white;
+  position: absolute;
+  width: 30px;
 }
 
 .project__container:hover {
