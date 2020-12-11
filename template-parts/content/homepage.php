@@ -197,9 +197,7 @@
         </a>
       </div> 
     </div>
-    
-      <!-- End Project 3  Summerize-->
-    
+    <!-- End Project 3  Summerize-->
   </div>        
 </section>
 <!-- End Winner Projects -->
@@ -260,7 +258,6 @@
 
 
 <section class="section skills bg_white" id="skills">
-    
       <div class="content--skills content" >
         <div class="content--skills__container">
           <h2 class = "content--skills__heading">Languages and Workflow</h2>

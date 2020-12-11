@@ -13,8 +13,8 @@
             <h1 class = "email">mzyrianova14@gmail.com</h1>
           </a>
       </div> 
-    <svg width="3664" viewBox="0 0 3664 1025" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path class="footer__waive" d="M2155.5 358.031C2038.04 -333.728 847.926 512.326 0 827.702V1025H1911H3664V0C3664 0 2215.5 711.385 2155.5 358.031Z" fill="#00C0F5"/>
+    <svg viewBox="0 0 3664 1025" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path class="footer__waive" d="M2155.5 358.031C2038.04 -333.728 847.926 512.326 0 827.702V1025H1911H3664V0C3664 0 2215.5 711.385 2155.5 358.031Z" fill="#00C0F5"/>
     </svg>
   </footer> 
 </body>

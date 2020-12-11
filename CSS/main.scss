@@ -20,14 +20,14 @@
 
 @import
     'components/buttons',
+    'components/scrollToProjectsButton',
+    'components/snowButton',
     'components/cursor',
     'components/headings',
+    'components/icons',
     'components/intro',
     'components/sections',
-    
-    'components/scrollToProjectsButton';
-
-@import 'components/webs';
+      'components/webs';
 @import 'components/projects';
 @import 'components/react';
 @import 'components/post';

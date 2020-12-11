@@ -6,7 +6,7 @@
     text-align: center;   
 }
 
-.waive-container>svg{
+.waive-container>svg {
     display:block;
     width:100vw;  
     overflow-x: hidden; 
@@ -14,18 +14,16 @@
 
 .contact__container{
     position:absolute;
-    bottom:60px;
+    bottom: 0px;
     left:50%;
     transform:translateX(-50%);
     z-index:300;
 }
-.social, .email, .phone{
-    text-decoration: none;
-}
+
 .social{
     margin-bottom:60px;
 }
-.phone{
+.phone {
     letter-spacing: 5px;
     color:$content--skills;
     margin-bottom: 60px;
@@ -33,33 +31,15 @@
 .email{
     font-size: 44px;
     letter-spacing: 8px;
-    color:white;
-    
+    color:white; 
 }
-.email:hover{
-    color:$complimentary;
-    text-decoration: none;
-}
-.phone:hover {
-    color:$complimentary;
-    text-decoration: none;
-    transition:0.5s ease-in;
-}
-i.fab{
-    color:white;
-    padding: 0 10px;
-    transition: all 0.5s ease-in-out;
-    transition:0.5s ease-in;
-}
-i.fab:hover{
-    color:$complimentary;
 
+.phone:hover, .email:hover {
+    color:$complimentary;
+    text-decoration: none;
+    transition:0.5s ease-in;
 }
-@media screen and (max-width:1199.98px){
-    .contact__container{
-        bottom:28px;
-    }
-}
+
 @media screen and (max-width:991.98px){
     .social,.phone{
         margin-bottom:32px;
@@ -68,9 +48,10 @@ i.fab:hover{
         font-size:1.5rem;
     }
 }
-@media screen and (max-width:575.98px){
-    .contact__container{
-        bottom:15px;
+
+@media screen and(max-width:600px) {
+    .waive-container>svg{
+        transform:scaleY(1.5);
     }
     .social,.phone{
         margin-bottom:12px;
@@ -81,29 +62,11 @@ i.fab:hover{
     .email{
         letter-spacing:2px;
     }
-    
 }
-@media screen and(max-width:550px){
-    .waive-container>svg{
-        transform:scaleY(1.5);
-    }
-    .contact__container{
-        bottom:-15px;
+
+@media screen and(min-width:600px) {
+    .contact__container {
+        bottom: 9%;
     }
 }
-@media screen and (max-width:424.98px){
-    i.fab{
-        padding:0;
-    }
-    .email{
-        font-size:1rem;
-    }
-}
-// .footer {
-//     &__waive {
-//         fill: red;
-//     }
-//     &__waive:hover {
-//         fill: blue;
-//     }
-// }
+ 

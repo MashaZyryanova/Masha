@@ -10,7 +10,7 @@ main {
     content: "";
     clear: both;
     display: table;
-  }
+}
   [class*="accent"] {
     color: $sky;
   }
@@ -30,7 +30,7 @@ hr {
   outline:none !important
 }
 .content{
-    max-width: 1300px;   
+  max-width: 1300px;   
 }
 
 .shadow{
